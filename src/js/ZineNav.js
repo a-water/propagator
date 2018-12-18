@@ -17,7 +17,7 @@ class ZineNav extends Component {
               { this.props.author }
             </span><br/>
             <span className="contributor-creds">
-              { this.props.creds }
+              { this.props.creds.toLowerCase() }
             </span>
           </div>
           <div className="zine-controls">  

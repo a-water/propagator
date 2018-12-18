@@ -61,7 +61,7 @@ module.exports = {
       "template": "",
       "author": "Michaela Costello",
       "creds": "illustrator",
-      "submissionTitle": "PSA no.1 & DOZER",
+      "submissionTitle": "PSA no.1\" & \"DOZER",
     },
 
     {
@@ -75,7 +75,7 @@ module.exports = {
     {
       "id": "",
       "template": "",
-      "author": "I❤️Computers",
+      "author": "i ❤️ computers",
       "creds": "code diva",
       "submissionTitle": "Sleep to Learn",
     }  

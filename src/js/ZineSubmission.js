@@ -2,9 +2,9 @@ import React, { Component } from 'react';
 
 class ZineSubmission extends Component {
   
-  constructor(props) {
-    super(props);
-  }
+  // constructor(props) {
+  //   super(props);
+  // }
 
   // TODO: Render based on template from zine data
   render() {

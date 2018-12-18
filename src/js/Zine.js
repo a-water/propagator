@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import NavBar from './NavBar';
 import ZineNav from './ZineNav';
+import TOC from './TOC';
 import ZineSubmission from './ZineSubmission';
 
 // ------------------------------------------------------
@@ -86,7 +87,8 @@ class Zine extends Component {
         />
         <div className="zine-content">
           {
-            this.state.currentPage === 0 ? this.TOC : 
+            this.state.currentPage === 0 ?
+            <TOC submissions={ this.props.zineData["submissions"] } /> : 
             <ZineSubmission sub={ this.props.zineData["submissions"][this.state.currentSubmission] } />
           }
         </div>

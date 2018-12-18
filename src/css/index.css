@@ -1,9 +1,9 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto+Mono:300i,400,400i,700i');
+
 /* COMPONENT CSS */
 @import './NavBar.css';
 @import './ZineNav.css';
-
-
-@import url('https://fonts.googleapis.com/css?family=Roboto+Mono:300i,400,400i,700i');
+@import './TOC.css';
 
 * {
   box-sizing: border-box;
@@ -17,8 +17,17 @@ a, a:visited, a:active {
   text-decoration: none;
 }
 
-body {
+body, html {
+  height: 100%;
   margin: 0;
   padding: 0;
   font-family: "Roboto Mono", monospace;
+}
+
+#root, .App, .zine {
+  height: 100%;
+}
+
+.zine-content {
+  height: calc(100% - 140px);
 }
