@@ -5,11 +5,9 @@ import ZineNav from './ZineNav';
 // ------------------------------------------------------
 // A zine component. Data for each zine is passed from
 // App.js through Routes (not sure if this is best).
+// The zine knows its current page.
 // ------------------------------------------------------
 class Zine extends Component {
-  // TODO: set state of currentPage to TOC
-  // update state when user clicks on ZineNav buttons
-  // pass handler from Zine to ZineNav
   render() {
     return (
       <div className="zine">
