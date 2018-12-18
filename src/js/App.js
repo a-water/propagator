@@ -3,6 +3,9 @@ import { Route, Switch } from 'react-router-dom';
 import Landing from './Landing';
 import Zine from './Zine';
 
+// bleh this will need to change later to a db
+import issueData from './data/issue-01';
+
 class App extends Component {
 
   render() {
@@ -13,9 +16,9 @@ class App extends Component {
           <Route exact path='/' component={ Landing }/>
           { 
             /* 
-              Potentially create an array of Routes from some data
-              like a list of zine metadata - for each issue, create
-              a new Route and pass the props needed
+              Later on we would potentially create an array of Routes 
+              from some data like a list of zine metadata - for each 
+              issue, create a new Route and pass the props needed
 
               <Route 
                 path='/issues/:issueID'
@@ -23,9 +26,10 @@ class App extends Component {
               />
             */
           }
+          
           <Route 
             path='/issue-01'
-            render={ () => <Zine /> }
+            render={ () => <Zine zineData={ issueData }/> }
           />
         </Switch>
 

@@ -9,6 +9,10 @@
   box-sizing: border-box;
 }
 
+*:focus {
+  outline: none !important;
+}
+
 a, a:visited, a:active {
   text-decoration: none;
 }
