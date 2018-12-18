@@ -31,6 +31,7 @@ class App extends Component {
 
         { 
           /*
+            TODOS
             + Header for PROPAGATOR, about content
             + Hero for most current issue with link to issue
             + Calls for contributors
