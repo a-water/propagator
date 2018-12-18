@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import NavBar from './NavBar';
 import ZineNav from './ZineNav';
+import ZineSubmission from './ZineSubmission';
 
 // ------------------------------------------------------
 // A zine component. Data for each zine is passed from
@@ -85,7 +86,8 @@ class Zine extends Component {
         />
         <div className="zine-content">
           {
-            this.state.currentPage === 0 ? this.TOC : null
+            this.state.currentPage === 0 ? this.TOC : 
+            <ZineSubmission sub={ this.props.zineData["submissions"][this.state.currentSubmission] } />
           }
         </div>
       </div>

@@ -27,7 +27,7 @@ class ZineNav extends Component {
               className="zine-controls-btn"
               onClick={ this.props.handleDecrementPage }
             >PREV</button>
-            
+            <span className="page-indicator-label">{ (this.props.currentPage + 1) + "/" + (this.props.numPages + 1) }</span>
             <button
               disabled={ this.props.currentPage === this.props.numPages }
               id="next-btn"
