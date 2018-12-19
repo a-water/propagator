@@ -25,8 +25,9 @@ class ZineSubmission extends Component {
       </div>
     )
   }
+  
   // ------------------------------------------------------
-  renderSecondary() {
+  renderSecondary(data) {
     return (
       <div className="zine-secondary">
       </div>
