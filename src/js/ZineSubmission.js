@@ -9,12 +9,12 @@ class ZineSubmission extends Component {
         <div className="split-template">
           <div className="split-left">
             <div className="text">
-              <span>{ data.title }</span>
-              <p>{ data.text }</p>
+              <span className="submission-title">{ data.title }</span>
+              <p className="primary-content">{ data.text }</p>
             </div>
           </div>
           <div className="split-right">
-            image goes here
+            <img src={ require('../assets/countertop-mayonnaise/primary.png') } />
           </div>
         </div>
       </div>

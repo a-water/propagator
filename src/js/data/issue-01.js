@@ -19,6 +19,7 @@ module.exports = {
     {
       "id": "",
       "content": {
+        "asset-directory":"countertop-mayonnaise",
         "primary": {
           "template": "split",
           "title": "countrtop mayonnaise",
