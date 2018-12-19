@@ -1,0 +1,40 @@
+/* TODO: Probably should split this up */
+.zine-submission {
+  height: 100%;
+}
+
+.zine-primary {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+}
+
+/* primary split template */
+.split-template {
+  max-width: 1440px;
+  height: 100%;
+}
+
+.split-template .split-left,
+.split-template .split-right {
+  height: 100%;
+  width: 50%;
+  display: inline-block;
+  vertical-align: top;
+}
+
+.split-template .split-left {
+  padding-left: 40px;
+}
+
+.split-template .split-right {
+  padding-right: 40px;
+  border: 2px solid black;
+}
+
+/* secondary */
+.zine-secondary {
+  border: 2px solid blue;
+  height: 400px;
+}

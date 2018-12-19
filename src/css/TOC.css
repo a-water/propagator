@@ -8,10 +8,10 @@
 }
 
 .zine-toc ul li {
-  list-style-type: none;
+  list-style-type: upper-roman;
   font-style: italic;
   font-weight: 300;
-  font-size: 22px;
+  font-size: 18px;
   line-height: 40px;
 }
 

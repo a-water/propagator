@@ -18,7 +18,21 @@ module.exports = {
     */
     {
       "id": "",
-      "template": "fifty-split",
+      "content": {
+        "primary": {
+          "template": "split",
+          "title": "countrtop mayonnaise",
+          "text": "It’s supposed to be in the fridge. It’s going to spoil. Why is it out of the fridge? Why would it be on the countertop? I thought I put it in the fridge. Did they take it out? It has enough preservatives in it to be left out for just one night without spoiling, right? But how damaging are the preservatives to my body? How do they preserve mayo? Should preservatives in food be legal? Are we weaker because of them? Should I make my own mayo? I should be making my own mayo. I’m going to make my own mayo. Oh no. My eggs have gone bad."
+        },
+        "quote": "",
+        "secondary": {
+          "template": "split",
+          "content": ""
+        },
+        "tertiary": {
+          "template": ""
+        }
+      },
       "author": "Ann Chen",
       "creds": "Illustrator",
       "submissionTitle": "countrtop mayonnaise",
@@ -26,7 +40,21 @@ module.exports = {
     
     {
       "id": "",
-      "template": "",
+      "content": {
+        "primary": {
+          "template": "split",
+          "title": "piecing together",
+          "text": "This year I explored new territories, embraced new experiences and in a way started connecting the dots dating way back to my teenage self. Also for about half the time I was very, very stressed out. At the end of it I notice how I see myself as a somewhat different person but still left with lots of unknown parts to figure out. I may be hiding those parts unconsciously but my dreams surfaced them more than anything."
+        },
+        "quote": "",
+        "secondary": {
+          "template": "split",
+          "content": ""
+        },
+        "tertiary": {
+          "template": ""
+        }
+      },
       "author": "Lynn Hu",
       "creds": "designer & artist",
       "submissionTitle": "Piecing Together",
@@ -34,7 +62,21 @@ module.exports = {
 
     {
       "id": "",
-      "template": "",
+      "content": {
+        "primary": {
+          "template": "split",
+          "title": "Dream Locations",
+          "text": ""
+        },
+        "quote": "",
+        "secondary": {
+          "template": "split",
+          "content": ""
+        },
+        "tertiary": {
+          "template": ""
+        }
+      },
       "author": "James Proctor",
       "creds": "data visualization engineer & new media artist",
       "submissionTitle": "Dream Locations",
@@ -42,6 +84,21 @@ module.exports = {
 
     {
       "id": "",
+      "content": {
+        "primary": {
+          "template": "full",
+          "title": "Ride",
+          "text": ""
+        },
+        "quote": "",
+        "secondary": {
+          "template": "split",
+          "content": ""
+        },
+        "tertiary": {
+          "template": ""
+        }
+      },
       "template": "",
       "author": "Alex Chan",
       "creds": "architect, writer, & artist",
@@ -50,7 +107,21 @@ module.exports = {
 
     {
       "id": "",
-      "template": "",
+      "content": {
+        "primary": {
+          "template": "full",
+          "title": "odbol",
+          "text": ""
+        },
+        "quote": "",
+        "secondary": {
+          "template": "split",
+          "content": ""
+        },
+        "tertiary": {
+          "template": ""
+        }
+      },
       "author": "odbol",
       "creds": "new media artist & cybertechnician",
       "submissionTitle": "odbol",
@@ -59,6 +130,21 @@ module.exports = {
     {
       "id": "",
       "template": "",
+      "content": {
+        "primary": {
+          "template": "split",
+          "title": "",
+          "text": ""
+        },
+        "quote": "",
+        "secondary": {
+          "template": "split",
+          "content": ""
+        },
+        "tertiary": {
+          "template": ""
+        }
+      },
       "author": "Michaela Costello",
       "creds": "illustrator",
       "submissionTitle": "PSA no.1\" & \"DOZER",
@@ -66,7 +152,21 @@ module.exports = {
 
     {
       "id": "",
-      "template": "",
+      "content": {
+        "primary": {
+          "template": "split",
+          "title": "",
+          "text": ""
+        },
+        "quote": "",
+        "secondary": {
+          "template": "split",
+          "content": ""
+        },
+        "tertiary": {
+          "template": ""
+        }
+      },
       "author": "Yousif Al-Yousifi",
       "creds": "new media artist & programmer",
       "submissionTitle": "Trees on a Lake",
@@ -74,10 +174,46 @@ module.exports = {
     
     {
       "id": "",
-      "template": "",
+      "content": {
+        "primary": {
+          "template": "split",
+          "title": "",
+          "text": ""
+        },
+        "quote": "",
+        "secondary": {
+          "template": "split",
+          "content": ""
+        },
+        "tertiary": {
+          "template": ""
+        }
+      },
       "author": "i ❤️ computers",
       "creds": "code diva",
       "submissionTitle": "Sleep to Learn",
-    }  
+    },
+    
+    {
+      "id": "",
+      "content": {
+        "primary": {
+          "template": "split",
+          "title": "",
+          "text": ""
+        },
+        "quote": "",
+        "secondary": {
+          "template": "split",
+          "content": ""
+        },
+        "tertiary": {
+          "template": ""
+        }
+      },
+      "author": "Ashwath Anand",
+      "creds": "creative technologist & new media artist",
+      "submissionTitle": "TBD",
+    }
   ]
 };

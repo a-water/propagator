@@ -4,6 +4,7 @@
 @import './NavBar.css';
 @import './ZineNav.css';
 @import './TOC.css';
+@import './ZineSubmission.css';
 
 * {
   box-sizing: border-box;

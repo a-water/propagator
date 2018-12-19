@@ -1,16 +1,47 @@
 import React, { Component } from 'react';
 
 class ZineSubmission extends Component {
-  
-  // constructor(props) {
-  //   super(props);
-  // }
+  // ------------------------------------------------------
+  renderPrimary(data) {
+    // TODO: check for primary template type
+    return (
+      <div className="zine-primary">
+        <div className="split-template">
+          <div className="split-left">
+            <span>{ data.title }</span>
+            <p>{ data.text }</p>
+          </div>
+          <div className="split-right">
+            image goes here
+          </div>
+        </div>
+      </div>
+    );
+  }
 
-  // TODO: Render based on template from zine data
+  renderQuote(data) {
+    return (
+      <div className="zine-quote">
+      </div>
+    )
+  }
+  // ------------------------------------------------------
+  renderSecondary() {
+    return (
+      <div className="zine-secondary">
+      </div>
+    );
+  }
+
+  // ------------------------------------------------------
+  // submission data: this.sub
   render() {
+    let primary = this.props.sub.content.primary;
+    let secondary = this.props.sub.content.secondary;
+    let tertiary = this.props.sub.content.tertiary;
     return (
       <div className="zine-submission">
-        <h1>{ this.props.sub["submissionTitle"] }</h1>
+        { this.renderPrimary(primary) }
       </div>
     )
   }
