@@ -1,35 +1,35 @@
 /* TODO: Probably should split this up */
 .zine-submission {
   height: 100%;
+  width: 100%;
 }
 
 .zine-primary {
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 100%;
 }
 
 /* primary split template */
 .split-template {
-  height: 100%;
-  width: 1440px;
+  width: 1200px;
+  display: flex;
+  justify-content: center;
 }
 
 .split-template .split-left,
 .split-template .split-right {
   width: 50%;
+  max-width: 600px;
   display: inline-flex;
-  vertical-align: top;
 }
 
 .split-template .split-left {
-  padding-left: 40px;
-  padding-right: 40px;
+  padding: 40px;
 }
 
 .split-template .split-left .text {
-  max-width: 500px;
+  max-width: 400px;
   align-self: center;
 }
 
@@ -46,12 +46,14 @@
 }
 
 .split-right {
-  justify-content: flex-end;
+  padding-right: 40px;
 }
 
 .split-right img {
+  object-fit: contain;
   width: 100%;
   height: auto;
+  align-self: flex-start;
 }
 
 /* secondary */
