@@ -44,7 +44,7 @@ class ZineSubmission extends Component {
                   <span className="submission-title">{ data.title }</span>
                 </div>
                 <p dangerouslySetInnerHTML={ this.renderInnerHtml(primaryTemplate.text) }></p>
-                <div dangerouslySetInnerHTML={ this.renderInnerHtml(primaryTemplate.video) }></div>
+                <div className="video-embed-container" dangerouslySetInnerHTML={ this.renderInnerHtml(primaryTemplate.video) }></div>
               </div>
             </div>
           </div>
