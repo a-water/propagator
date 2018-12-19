@@ -20,8 +20,6 @@
 .split-template .split-left,
 .split-template .split-right {
   width: 50%;
-  /* min-height: 100%; */
-  /* max-width: 600px; */
   display: inline-flex;
 }
 
