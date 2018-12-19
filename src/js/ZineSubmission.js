@@ -1,4 +1,6 @@
 import React, { Component } from 'react';
+import FullTemplate from './FullTemplate';
+import SplitTemplate from './SplitTemplate';
 
 class ZineSubmission extends Component {
   renderInnerHtml(content) {
@@ -63,11 +65,11 @@ class ZineSubmission extends Component {
   }
 
   // ------------------------------------------------------
-  renderQuote(content) {
+  renderQuote(data) {
     return (
       <div className="zine-quote">
         <div className="zine-quote-inner">
-          <p>"{ content.quote }"</p>
+          <p>"{ data.quote }"</p>
         </div>
       </div>
     )
@@ -82,13 +84,13 @@ class ZineSubmission extends Component {
   }
 
   // ------------------------------------------------------
-  // submission data: this.sub
   render() {
     let content = this.props.sub.content;
     return (
       <div className="zine-submission">
         { this.renderPrimary(content) }
         { this.renderQuote(content) }
+        { this.renderSecondary(content) }
       </div>
     )
   }
