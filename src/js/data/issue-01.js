@@ -42,6 +42,7 @@ module.exports = {
     {
       "id": "",
       "content": {
+        "asset-directory": "piecing-together",
         "primary": {
           "template": "split",
           "title": "piecing together",
@@ -64,6 +65,7 @@ module.exports = {
     {
       "id": "",
       "content": {
+        "asset-directory":"dream-locations",
         "primary": {
           "template": "split",
           "title": "Dream Locations",
