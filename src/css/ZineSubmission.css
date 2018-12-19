@@ -12,7 +12,7 @@
 
 /* primary split template */
 .split-template {
-  max-width: 1440px;
+  width: 1440px;
   height: 100%;
 }
 
@@ -26,6 +26,17 @@
 
 .split-template .split-left {
   padding-left: 40px;
+}
+
+.split-template .split-left .text {
+  max-width: 500px;
+}
+
+.split-left .text p {
+  font-style: italic;
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 32px;
 }
 
 .split-template .split-right {

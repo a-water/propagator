@@ -22,6 +22,32 @@ class Zine extends Component {
       currentSubmission: -1,
       currentPage: 0,
     }
+
+    this.handleOnKeyDown = this.handleOnKeyDown.bind(this);
+  }
+
+  // ------------------------------------------------------
+  componentDidMount() {
+    document.addEventListener("keydown", this.handleOnKeyDown, false);
+  }
+
+  // ------------------------------------------------------
+  componentWillUnmount(){
+    document.removeEventListener("keydown", this.handleOnKeyDown, false);
+  }
+
+  // ------------------------------------------------------
+  handleOnKeyDown(e) {
+    e.preventDefault();
+    if (e.keyCode === 39) {
+      // right arrow
+      this.incrementPage();
+    } 
+    
+    if (e.keyCode === 37) {
+      // left arrow
+      this.decrementPage();
+    }
   }
 
   // ------------------------------------------------------

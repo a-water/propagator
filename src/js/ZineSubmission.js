@@ -8,8 +8,10 @@ class ZineSubmission extends Component {
       <div className="zine-primary">
         <div className="split-template">
           <div className="split-left">
-            <span>{ data.title }</span>
-            <p>{ data.text }</p>
+            <div className="text">
+              <span>{ data.title }</span>
+              <p>{ data.text }</p>
+            </div>
           </div>
           <div className="split-right">
             image goes here
@@ -25,7 +27,7 @@ class ZineSubmission extends Component {
       </div>
     )
   }
-  
+
   // ------------------------------------------------------
   renderSecondary(data) {
     return (
