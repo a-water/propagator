@@ -28,11 +28,13 @@ class ZineSubmission extends Component {
           </div>
         </div>
       );
-    } else {
-      console.log('other template');
+    } else if (primaryTemplate.style === 'full') {
       return (
         <div>other template thingy</div>
       )
+    } else {
+      console.log('unknown template style: ', primaryTemplate.style);
+      return null;
     }
   }
 
