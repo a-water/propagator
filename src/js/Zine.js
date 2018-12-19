@@ -14,24 +14,37 @@ class Zine extends Component {
   // ------------------------------------------------------
   constructor(props) {
     super(props);
+    const submissions = props.zineData["submissions"];
 
-    this.numPages = props.zineData["submissions"].length; 
+    this.numPages = submissions.length; 
     this.TOC = this.generateTOC();
 
     this.state = {
       currentSubmission: -1,
       currentPage: 0,
+      currentSubmissionTitle: "",
+      previousSubmissionTitle: "",
+      nextSubmissionTitle: submissions[0].submissionTitle
     }
 
     if(props.match) {
       let { currentSubmissionTitle } = props.match.match.params;
       currentSubmissionTitle = currentSubmissionTitle.replace(/_/g, " ");
-      console.log("BLAH: ", currentSubmissionTitle);
       if(currentSubmissionTitle) {
-        for(let i=0; i<props.zineData["submissions"].length; i++) {
-          if(props.zineData["submissions"][i].submissionTitle === currentSubmissionTitle) {
+        for(let i=0; i<submissions.length; i++) {
+          if(submissions[i].submissionTitle === currentSubmissionTitle) {
             this.state.currentSubmission = i;
             this.state.currentPage = i + 1;
+            this.state.currentSubmissionTitle = currentSubmissionTitle;
+            
+            if(i === 0) {
+              this.state.nextSubmissionTitle = submissions[i+1].submissionTitle; 
+            } else if (i === submissions.length - 1) { 
+              this.state.previousSubmissionTitle = submissions[i-1].submissionTitle;
+            } else {
+              this.state.nextSubmissionTitle = submissions[i+1].submissionTitle; 
+              this.state.previousSubmissionTitle = submissions[i-1].submissionTitle;
+            }
             return;
           }
         }
@@ -121,6 +134,9 @@ class Zine extends Component {
             this.state.currentPage === 0 ? "" :
             this.props.zineData["submissions"][this.state.currentSubmission].creds 
           }
+          currentSubmissionTitle= { this.state.currentSubmissionTitle }
+          previousSubmissionTitle= { this.state.previousSubmissionTitle }
+          nextSubmissionTitle= { this.state.nextSubmissionTitle }
           currentPage={ this.state.currentPage }
           numPages={ this.numPages }
           showPrevBtn={ this.state.currentPage > 0 }
