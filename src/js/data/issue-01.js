@@ -25,7 +25,7 @@ module.exports = {
           "title": "countrtop mayonnaise",
           "text": "It’s supposed to be in the fridge. It’s going to spoil. Why is it out of the fridge? Why would it be on the countertop? I thought I put it in the fridge. Did they take it out? It has enough preservatives in it to be left out for just one night without spoiling, right? But how damaging are the preservatives to my body? How do they preserve mayo? Should preservatives in food be legal? Are we weaker because of them? Should I make my own mayo? I should be making my own mayo. I’m going to make my own mayo. Oh no. My eggs have gone bad."
         },
-        "quote": "",
+        "quote": "I don’t know if I want to know what it looks like for my imagined realities to manifest into some kind of realness.",
         "secondary": {
           "template": "split",
           "content": ""
