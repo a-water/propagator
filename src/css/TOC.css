@@ -8,11 +8,20 @@
 }
 
 .zine-toc ul li {
-  list-style-type: upper-roman;
+  list-style-type: decimal-leading-zero;
   font-style: italic;
   font-weight: 300;
   font-size: 18px;
   line-height: 40px;
+}
+
+.zine-toc a {
+  color: black;
+}
+
+.zine-toc a:hover {
+  color: blue;
+  font-weight: 400;
 }
 
 .zine-cover,

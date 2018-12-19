@@ -14,14 +14,14 @@ class TOC extends Component {
             { 
               this.props.submissions.map((sub, index) => {
                 return (
-                  <Link 
-                    to={`/issue-01/${ sub.submissionTitle.replace(/ /g, "_") }`}
-                    key={ sub.submissionTitle }
-                  >
-                    <li key={ 'page-' + (index + 1) }>
+                  <li key={ 'page-' + (index + 1) }>
+                    <Link 
+                      to={`/issue-01/${ sub.submissionTitle.replace(/ /g, "_") }`}
+                      key={ sub.submissionTitle }
+                    >
                       "{ sub.submissionTitle.toUpperCase() }" by { sub.author.toUpperCase() }
-                    </li>
-                  </Link>  
+                    </Link>
+                  </li>  
                 )
               })
             }
