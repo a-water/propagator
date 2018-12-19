@@ -1,6 +1,10 @@
 import React, { Component } from 'react';
 
 class ZineSubmission extends Component {
+  renderSplitParas(content) {
+    return { __html: content };
+  }
+
   // ------------------------------------------------------
   renderPrimary(data) {
     // TODO: check for primary template type
@@ -10,7 +14,7 @@ class ZineSubmission extends Component {
           <div className="split-left">
             <div className="text">
               <span className="submission-title">{ data.title }</span>
-              <p className="primary-content">{ data.text }</p>
+              <p dangerouslySetInnerHTML={ this.renderSplitParas(data.text) }className="primary-content"></p>
             </div>
           </div>
           <div className="split-right">
@@ -25,7 +29,7 @@ class ZineSubmission extends Component {
     return (
       <div className="zine-quote">
         <div className="zine-quote-inner">
-          <p>{ quote }</p>
+          <p>"{ quote }"</p>
         </div>
       </div>
     )

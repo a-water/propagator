@@ -47,7 +47,7 @@ module.exports = {
           "title": "piecing together",
           "text": "This year I explored new territories, embraced new experiences and in a way started connecting the dots dating way back to my teenage self. Also for about half the time I was very, very stressed out. At the end of it I notice how I see myself as a somewhat different person but still left with lots of unknown parts to figure out. I may be hiding those parts unconsciously but my dreams surfaced them more than anything."
         },
-        "quote": "",
+        "quote": "I\"m still not quite ready to speak of it.",
         "secondary": {
           "template": "split",
           "content": ""
@@ -67,9 +67,9 @@ module.exports = {
         "primary": {
           "template": "split",
           "title": "Dream Locations",
-          "text": ""
+          "text": "Location is typically the aspect of my dreams I remember most clearly, so I was interested in seeing if recording them caused me to focus more on a narrative or drew out other details about the space. What I found was that in fact many of my dreams do center around spaces, so I wanted to create a diagram that helped me see patterns in those locations.<br/><br/>Each dream is represented as a circle, where its size is based on the number of lines I wrote about that dream, and it’s fill is darkened based on the time I spent asleep, which ranged from 4 to 10.5 hours. The dream circles are nested within larger circles representing categories of location. At the top level the dreams are split about evenly between indoor and outdoor locations, with a smaller number that were ambiguous or involved moving between the two. Finally, a line traces through the dreams in chronological order.<br/><br/>Interestingly, after especially long nights of sleep I seem to write in more detail about dreams involving interior spaces, but less about dreams involving exterior locations."
         },
-        "quote": "",
+        "quote": "Location is typically the aspect of my dreams I remember most clearly […] Many of my dreams center around spaces.",
         "secondary": {
           "template": "split",
           "content": ""
