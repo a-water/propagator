@@ -154,7 +154,7 @@ module.exports = {
           },
         },
 
-        "quote": "A singular beautiful truth can only be achieved through the simultaenous experience and acceptance of everything at once.",
+        "quote": "A singular beautiful truth can only be achieved through the simultaenous experience & acceptance of everything at once.",
 
         "secondary": {
           "template": {

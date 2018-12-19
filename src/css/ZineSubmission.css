@@ -33,7 +33,7 @@
 }
 
 .text .submission-title {
-  font-size: 24px;
+  font-size: 28px;
   font-weight: 400;
 }
 
@@ -65,12 +65,27 @@
 
 .full-template-inner {
   padding: 80px 40px;
-  width: 70%; 
+  width: 100%; 
+}
+
+
+.full-template-inner {
+  max-width: 80%;
+}
+
+.full-template-text {
+  font-weight: 300;
+  font-style: italic;
+  font-size: 0.875em;
+  line-height: 22px;
 }
 
 .full-template-inner .submission-title-container {
-  margin: 24px 0px;
+  margin: 28px 0px;
   text-align: center;
+  font-weight: 400;
+  font-style: italic;
+  font-size: 24px;
 }
 
 /* https://blog.theodo.fr/2018/01/responsive-iframes-css-trick/ */
@@ -102,7 +117,7 @@ iframe {
 }
 
 .zine-quote-inner {
-  width: 65%;
+  width: 55%;
   text-align: center;
 }
 

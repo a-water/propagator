@@ -39,22 +39,19 @@ class ZineSubmission extends Component {
           { /* TODO: FullTemplate component supports different media types: video, iFrame, text */ }
           <div className="full-template">
             <div className="full-template-inner">
-              <div className="text">
-                <div className="submission-title-container">
-                  <span className="submission-title">{ data.title }</span>
-                </div>
-
-                {
-                  primaryTemplate.contentType === 'text'? 
-                  <p dangerouslySetInnerHTML={ this.renderInnerHtml(primaryTemplate.text) }></p> : null 
-                }
-
-                {
-                  primaryTemplate.contentType === 'video'?
-                  <div className="video-embed-container" dangerouslySetInnerHTML={ this.renderInnerHtml(primaryTemplate.video) }></div> : null
-                }
-                
+              <div className="submission-title-container">
+                <span className="submission-title">{ data.title }</span>
               </div>
+
+              {
+                primaryTemplate.contentType === 'text'? 
+                <p className="full-template-text" dangerouslySetInnerHTML={ this.renderInnerHtml(primaryTemplate.text) }></p> : null 
+              }
+
+              {
+                primaryTemplate.contentType === 'video'?
+                <div className="video-embed-container" dangerouslySetInnerHTML={ this.renderInnerHtml(primaryTemplate.video) }></div> : null
+              }
             </div>
           </div>
         </div>
