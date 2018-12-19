@@ -6,25 +6,37 @@ class ZineSubmission extends Component {
   }
 
   // ------------------------------------------------------
-  renderPrimary(content) {
+  renderPrimary(data) {
     // TODO: check for primary template type
-    return (
-      <div className="zine-primary">
-        <div className="split-template">
-          <div className="split-left">
-            <div className="text">
-              <span className="submission-title">{ content.primary.title }</span>
-              <p dangerouslySetInnerHTML={ this.renderSplitParas(content.primary.text) }className="primary-content"></p>
+    let primaryTemplate = data.primary.template;
+
+    if (primaryTemplate.style === 'split') {
+      return (
+        <div className="zine-primary">
+          <div className="split-template">
+            <div className="split-left">
+              <div className="text">
+                <span className="submission-title">{ data.title }</span>
+                <p dangerouslySetInnerHTML={ this.renderSplitParas(primaryTemplate.text) }className="primary-content"></p>
+              </div>
+            </div>
+            <div className="split-right">
+              <img src={ 
+                require(`../assets/${ data.assetDir }/${ primaryTemplate.img }`)
+              } />
             </div>
           </div>
-          <div className="split-right">
-            <img src={ require(`../assets/${ content["asset-directory"] }/primary.png`) } />
-          </div>
         </div>
-      </div>
-    );
+      );
+    } else {
+      console.log('other template');
+      return (
+        <div>other template thingy</div>
+      )
+    }
   }
 
+  // ------------------------------------------------------
   renderQuote(content) {
     return (
       <div className="zine-quote">
@@ -47,10 +59,6 @@ class ZineSubmission extends Component {
   // submission data: this.sub
   render() {
     let content = this.props.sub.content;
-    // let primary = this.props.sub.content.primary;
-    // let secondary = this.props.sub.content.secondary;
-    // let tertiary = this.props.sub.content.tertiary;
-    // let quote = this.props.sub.content.quote;
     return (
       <div className="zine-submission">
         { this.renderPrimary(content) }
