@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import { Link } from 'react-router-dom';
 
 // ------------------------------------------------------
 // A navigation component for a zine, includes controls
@@ -20,20 +21,24 @@ class ZineNav extends Component {
               { this.props.creds.toLowerCase() }
             </span>
           </div>
-          <div className="zine-controls">  
-            <button
-              disabled={ this.props.currentPage === 0 }
-              id="prev-btn"
-              className="zine-controls-btn"
-              onClick={ this.props.handleDecrementPage }
-            >PREV</button>
+          <div className="zine-controls">
+            <Link to={`/issue-01/${ this.props.previousSubmissionTitle.replace(/ /g, "_") }`}>
+              <button
+                disabled={ this.props.currentPage === 0 }
+                id="prev-btn"
+                className="zine-controls-btn"
+                onClick={ this.props.handleDecrementPage }
+              >PREV</button>
+            </Link>
             <span className="page-indicator-label">{ (this.props.currentPage + 1) + "/" + (this.props.numPages + 1) }</span>
-            <button
-              disabled={ this.props.currentPage === this.props.numPages }
-              id="next-btn"
-              className="zine-controls-btn"
-              onClick={ this.props.handleIncrementPage }
-            >NEXT</button>
+            <Link to={`/issue-01/${ this.props.nextSubmissionTitle.replace(/ /g, "_") }`}>
+              <button
+                disabled={ this.props.currentPage === this.props.numPages }
+                id="next-btn"
+                className="zine-controls-btn"
+                onClick={ this.props.handleIncrementPage }
+              >NEXT</button>
+            </Link>
             
           </div>
         </div>
