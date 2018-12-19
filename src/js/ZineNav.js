@@ -9,6 +9,22 @@ import { Link } from 'react-router-dom';
 // ------------------------------------------------------
 class ZineNav extends Component {
 
+  // ------------------------------------------------------
+  handleOnKeyDown(e) {
+    e.preventDefault();
+    if (e.keyCode === 39) {
+      // right arrow
+      console.log(this);
+      this.props.handleIncrementPage();
+    } 
+    
+    if (e.keyCode === 37) {
+      // left arrow
+      this.props.handleDecrementPage();
+    }
+  }
+
+  // ------------------------------------------------------
   render() {
     return (
       <div className="zine-nav">

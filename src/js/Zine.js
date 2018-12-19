@@ -27,17 +27,17 @@ class Zine extends Component {
       nextSubmissionTitle: submissions[0].submissionTitle
     }
 
-    if(props.match) {
+    if (props.match) {
       let { currentSubmissionTitle } = props.match.match.params;
       currentSubmissionTitle = currentSubmissionTitle.replace(/_/g, " ");
-      if(currentSubmissionTitle) {
-        for(let i=0; i<submissions.length; i++) {
-          if(submissions[i].submissionTitle === currentSubmissionTitle) {
+      if (currentSubmissionTitle) {
+        for (let i=0; i<submissions.length; i++) {
+          if (submissions[i].submissionTitle === currentSubmissionTitle) {
             this.state.currentSubmission = i;
             this.state.currentPage = i + 1;
             this.state.currentSubmissionTitle = currentSubmissionTitle;
             
-            if(i === 0) {
+            if (i === 0) {
               this.state.nextSubmissionTitle = submissions[i+1].submissionTitle; 
             } else if (i === submissions.length - 1) { 
               this.state.previousSubmissionTitle = submissions[i-1].submissionTitle;
@@ -49,33 +49,6 @@ class Zine extends Component {
           }
         }
       }
-  }
-
-
-    this.handleOnKeyDown = this.handleOnKeyDown.bind(this);
-  }
-
-  // ------------------------------------------------------
-  componentDidMount() {
-    document.addEventListener("keydown", this.handleOnKeyDown, false);
-  }
-
-  // ------------------------------------------------------
-  componentWillUnmount(){
-    document.removeEventListener("keydown", this.handleOnKeyDown, false);
-  }
-
-  // ------------------------------------------------------
-  handleOnKeyDown(e) {
-    e.preventDefault();
-    if (e.keyCode === 39) {
-      // right arrow
-      this.incrementPage();
-    } 
-    
-    if (e.keyCode === 37) {
-      // left arrow
-      this.decrementPage();
     }
   }
 

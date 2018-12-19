@@ -43,8 +43,17 @@ class ZineSubmission extends Component {
                 <div className="submission-title-container">
                   <span className="submission-title">{ data.title }</span>
                 </div>
-                <p dangerouslySetInnerHTML={ this.renderInnerHtml(primaryTemplate.text) }></p>
-                <div className="video-embed-container" dangerouslySetInnerHTML={ this.renderInnerHtml(primaryTemplate.video) }></div>
+
+                {
+                  primaryTemplate.contentType === 'text'? 
+                  <p dangerouslySetInnerHTML={ this.renderInnerHtml(primaryTemplate.text) }></p> : null 
+                }
+
+                {
+                  primaryTemplate.contentType === 'video'?
+                  <div className="video-embed-container" dangerouslySetInnerHTML={ this.renderInnerHtml(primaryTemplate.video) }></div> : null
+                }
+                
               </div>
             </div>
           </div>
