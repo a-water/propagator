@@ -21,9 +21,12 @@ class ZineSubmission extends Component {
     );
   }
 
-  renderQuote(data) {
+  renderQuote(quote) {
     return (
       <div className="zine-quote">
+        <div className="zine-quote-inner">
+          <p>{ quote }</p>
+        </div>
       </div>
     )
   }
@@ -42,9 +45,11 @@ class ZineSubmission extends Component {
     let primary = this.props.sub.content.primary;
     let secondary = this.props.sub.content.secondary;
     let tertiary = this.props.sub.content.tertiary;
+    let quote = this.props.sub.content.quote;
     return (
       <div className="zine-submission">
         { this.renderPrimary(primary) }
+        { this.renderQuote(quote) }
       </div>
     )
   }
