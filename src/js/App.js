@@ -26,7 +26,10 @@ class App extends Component {
               />
             */
           }
-          
+          <Route
+            path='/issue-01/:currentSubmissionTitle' 
+            render={ (match) => <Zine zineData={ issueData } match={ match }/> }
+          />
           <Route 
             path='/issue-01'
             render={ () => <Zine zineData={ issueData }/> }

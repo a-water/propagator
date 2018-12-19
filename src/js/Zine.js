@@ -15,13 +15,29 @@ class Zine extends Component {
   constructor(props) {
     super(props);
 
-    this.numPages = this.props.zineData["submissions"].length; 
+    this.numPages = props.zineData["submissions"].length; 
     this.TOC = this.generateTOC();
 
     this.state = {
       currentSubmission: -1,
       currentPage: 0,
     }
+
+    if(props.match) {
+      let { currentSubmissionTitle } = props.match.match.params;
+      currentSubmissionTitle = currentSubmissionTitle.replace(/_/g, " ");
+      console.log("BLAH: ", currentSubmissionTitle);
+      if(currentSubmissionTitle) {
+        for(let i=0; i<props.zineData["submissions"].length; i++) {
+          if(props.zineData["submissions"][i].submissionTitle === currentSubmissionTitle) {
+            this.state.currentSubmission = i;
+            this.state.currentPage = i + 1;
+            return;
+          }
+        }
+      }
+  }
+
 
     this.handleOnKeyDown = this.handleOnKeyDown.bind(this);
   }
