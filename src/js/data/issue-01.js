@@ -177,46 +177,156 @@ module.exports = {
     // ------------------------------------------------------
     // 05. odbol by odbol
     // ------------------------------------------------------
-    
+    {
+      "id": "",
+      "author": "odbol",
+      "creds": "new media artist & cybertechnician",
+      "submissionTitle": "odbol",
+
+      "content": {
+        "title": "odbol",
+        "assetDir": "odbol",
+
+        "primary": {
+          "template": {
+            "style": "full",
+            "contentType":"video",
+            "video": "<iframe width=\"560\" height=\"315\" src=\"https://www.youtube.com/embed/aXo0ng7tpIY\" frameborder=\"0\" allow=\"accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture\" allowfullscreen></iframe>"
+          }
+        },
+
+        "quote": "Suddenly, I woke up, and knew I was supposed to bring it to life.",
+
+        "secondary": {
+          "template": {
+
+          }
+          
+        },
+        "tertiary": {
+          "template": {
+
+          }
+        }
+      } 
+    },
 
     // ------------------------------------------------------
     // 06. PSA no. 1 by Michaela Costello
     // ------------------------------------------------------
-    
+    {
+      "id": "",
+      "author": "Michaela Costello",
+      "creds": "illustrator & graphic designer",
+      "submissionTitle": "PSA no. 1",
+
+      "content": {
+        "title": "PSA no. 1",
+        "assetDir": "psa-no-1",
+
+        "primary": {
+          "template": {
+            "style": "split",
+            "contentType":"imgText",
+            "img": "primary.png",
+            "text": "I was given a dead fish by strangers, and made to feel quite personally guilty about it’s lifeless state. Within the context of this guilt I was persuaded to hurry up and get it into the building over there. I panicked and hurried my way, stressed as can be, into an unknown government-style building. When I realized, upon entry, that there was no purpose for me here, I turned around to leave. The only exit was through a gateway-barrier resembling that of an airport security clearance point. I would be required, if I were to exit, to give my genetic information in a variety of forms. I was trapped. This is a true terror. I yell out a long, drawn out, “No!”"
+          }
+        },
+
+        "quote": "A meeting becomes an acquaintance; an acquaintance becomes a friendship.",
+
+        "secondary": {
+          "template": {
+
+          }
+          
+        },
+        "tertiary": {
+          "template": {
+
+          }
+        }
+      } 
+    },
 
     // ------------------------------------------------------
     // 07. Trees on a Lake by Yousif Al-Yousifi
     // ------------------------------------------------------
+    {
+      "id": "",
+      "author": "Yousif Al-Yousifi",
+      "creds": "new media artist & programmer",
+      "submissionTitle": "Trees on a Lake",
+
+      "content": {
+        "title": "Trees on a Lake",
+        "assetDir": "trees-on-a-lake",
+
+        "primary": {
+          "template": {
+            "style": "full",
+            "contentType":"video",
+            "video": ""
+          }
+        },
+
+        "quote": "After a few days of thinking about it, I dreamt about it.",
+
+        "secondary": {
+          "template": {
+
+          }
+          
+        },
+        "tertiary": {
+          "template": {
+
+          }
+        }
+      } 
+    },
     
     
     // ------------------------------------------------------
     // 08. Sleep to Learn by i<3computers
     // ------------------------------------------------------
+    {
+      "id": "",
+      "author": "i❤️computers",
+      "creds": "code diva",
+      "submissionTitle": "Sleep to Learn",
+
+      "content": {
+        "title": "Sleep to Learn",
+        "assetDir": "sleep-to-learn",
+
+        "primary": {
+          "template": {
+            "style": "full",
+            "contentType":"iframe",
+            "iframe": ""
+          }
+        },
+
+        "quote": "I’d like to think our dreams are that fluttery surreal color that sprinkle into our dull lives.",
+
+        "secondary": {
+          "template": {
+
+          }
+          
+        },
+        "tertiary": {
+          "template": {
+
+          }
+        }
+      } 
+    }
   
     
     // ------------------------------------------------------
     // 09. tbd by Ashwath Anand
     // ------------------------------------------------------
-    // {
-    //   "id": "",
-    //   "content": {
-    //     "primary": {
-    //       "template": "split",
-    //       "title": "",
-    //       "text": ""
-    //     },
-    //     "quote": "",
-    //     "secondary": {
-    //       "template": "split",
-    //       "content": ""
-    //     },
-    //     "tertiary": {
-    //       "template": ""
-    //     }
-    //   },
-    //   "author": "Ashwath Anand",
-    //   "creds": "creative technologist & new media artist",
-    //   "submissionTitle": "TBD",
-    // }
   ]
 };

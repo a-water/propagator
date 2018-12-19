@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 
 class ZineSubmission extends Component {
-  renderSplitParas(content) {
+  renderInnerHtml(content) {
     return { __html: content };
   }
 
@@ -17,7 +17,7 @@ class ZineSubmission extends Component {
             <div className="split-left">
               <div className="text">
                 <span className="submission-title">{ data.title }</span>
-                <p dangerouslySetInnerHTML={ this.renderSplitParas(primaryTemplate.text) }></p>
+                <p dangerouslySetInnerHTML={ this.renderInnerHtml(primaryTemplate.text) }></p>
               </div>
             </div>
             <div className="split-right">
@@ -32,6 +32,7 @@ class ZineSubmission extends Component {
         </div>
       );
     } else if (primaryTemplate.style === 'full') {
+      
       return (
         <div className="zine-section">
           { /* TODO: Move below to FullTemplate component */ }
@@ -42,7 +43,8 @@ class ZineSubmission extends Component {
                 <div className="submission-title-container">
                   <span className="submission-title">{ data.title }</span>
                 </div>
-                <p dangerouslySetInnerHTML={ this.renderSplitParas(primaryTemplate.text) }></p>
+                <p dangerouslySetInnerHTML={ this.renderInnerHtml(primaryTemplate.text) }></p>
+                <div dangerouslySetInnerHTML={ this.renderInnerHtml(primaryTemplate.video) }></div>
               </div>
             </div>
           </div>
