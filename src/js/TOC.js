@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import { Link } from 'react-router-dom';
 
 // ------------------------------------------------------
 // Generates a Table of Contents for a Zine component.
@@ -13,9 +14,14 @@ class TOC extends Component {
             { 
               this.props.submissions.map((sub, index) => {
                 return (
-                  <li key={ 'page-' + (index + 1) }>
-                    "{ sub.submissionTitle.toUpperCase() }" by { sub.author.toUpperCase() }
-                  </li>
+                  <Link 
+                    to={`/issue-01/${ sub.submissionTitle.replace(/ /g, "_") }`}
+                    key={ sub.submissionTitle }
+                  >
+                    <li key={ 'page-' + (index + 1) }>
+                      "{ sub.submissionTitle.toUpperCase() }" by { sub.author.toUpperCase() }
+                    </li>
+                  </Link>  
                 )
               })
             }
