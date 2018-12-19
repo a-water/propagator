@@ -7,30 +7,46 @@ class ZineSubmission extends Component {
 
   // ------------------------------------------------------
   renderPrimary(data) {
-    // TODO: check for primary template type
     let primaryTemplate = data.primary.template;
 
     if (primaryTemplate.style === 'split') {
       return (
-        <div className="zine-primary">
+        <div className="zine-section">
+          { /* TODO: Move below to SplitTemplate component */ }
           <div className="split-template">
             <div className="split-left">
               <div className="text">
                 <span className="submission-title">{ data.title }</span>
-                <p dangerouslySetInnerHTML={ this.renderSplitParas(primaryTemplate.text) }className="primary-content"></p>
+                <p dangerouslySetInnerHTML={ this.renderSplitParas(primaryTemplate.text) }></p>
               </div>
             </div>
             <div className="split-right">
-              <img src={ 
-                require(`../assets/${ data.assetDir }/${ primaryTemplate.img }`)
-              } />
+              <img 
+                alt="primary"
+                src={ 
+                  require(`../assets/${ data.assetDir }/${ primaryTemplate.img }`)
+                } 
+              />
             </div>
           </div>
         </div>
       );
     } else if (primaryTemplate.style === 'full') {
       return (
-        <div>other template thingy</div>
+        <div className="zine-section">
+          { /* TODO: Move below to FullTemplate component */ }
+          { /* TODO: FullTemplate component supports different media types: video, iFrame, text */ }
+          <div className="full-template">
+            <div className="full-template-inner">
+              <div className="text">
+                <div className="submission-title-container">
+                  <span className="submission-title">{ data.title }</span>
+                </div>
+                <p dangerouslySetInnerHTML={ this.renderSplitParas(primaryTemplate.text) }></p>
+              </div>
+            </div>
+          </div>
+        </div>
       )
     } else {
       console.log('unknown template style: ', primaryTemplate.style);
@@ -52,7 +68,7 @@ class ZineSubmission extends Component {
   // ------------------------------------------------------
   renderSecondary(data) {
     return (
-      <div className="zine-secondary">
+      <div className="zine-section">
       </div>
     );
   }
