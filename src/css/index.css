@@ -30,5 +30,6 @@ body, html {
 }
 
 .zine-content {
-  height: calc(100% - 118px);
+  padding-top: 118px;
+  height: 100%;
 }
