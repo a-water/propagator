@@ -80,7 +80,7 @@ module.exports = {
           }
         },
 
-        "quote": "I\"m still not quite ready to speak of it.",
+        "quote": "I'm still not quite ready to speak of it.",
 
         "secondary": {
           "template": {
