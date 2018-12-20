@@ -148,18 +148,15 @@ module.exports = {
             "contentType":"text",
             "text": "<b>I walk onto the grounds of a farm, dawn light filtering through pollen and dust.</b><br/><br/>There are a few people scattered about, performing various tasks. I walk to the stable and enter through a small wooden entrance. I look up, and see a black horse, black until it runs towards me, rearing a little in its joy. Then its coat changes into a deep dark brown as it shimmers in the sun. It’s been years of separation and I’m overjoyed to see that he has remembered me, and so fondly approaches.<br/><br/>I return to the stable entrance and ask an older woman, blond hair greying, for something sweet to add to my horse’s feed. She hands me a plastic bag of dried cranberries that are catered towards diabetics. It’s all she has, she says, so I take it despite my misgivings about whether it’s healthy for horses to eat. I then turn around and grab an ornate saddle, returning outside.<br/><br/>We have been thrown together, both launched high up into the air as if by a springboard. We land on our sides onto a field of red-gold, a freshly harvested field of wheat. The rows have been shorn short, golden tufts lining ochre red earth. We have landed face to face and I know that things are irreparable now. I look at the black horse, its coat dark brown revealed by the rays of the sun, and I cry.<br/><br/>If this is the end, together and from doing what we both love most, then it is a beautiful way to die."
           },
-        },
-
-        "quote": "A singular beautiful truth can only be achieved through the simultaenous experience & acceptance of everything at once.",
-
-        "secondary": {
-          "template": {
-            "style":"split",
-            "contentType": "imgText",
-            "img":"secondary.png",
+          "secondTemplate":{
+            "style" : "split",
+            "contentType":"imgText",
+            "img":"secondPrimary.png",
             "text":"The piece depicts the most symbolic, colorfully vivid, detailed and personally resonant dream remembered over my brief “dream period.” Major symbols in the piece have both a cultural and personal importance to me, from both my Eastern ethnic background and my Western upbringing. <b>These symbols represent universal themes, such as freedom, beauty, and openness</b>, of which I’ve had an ever evolving-relationship with throughout my life: at times restrictive, other times enriching, but always fundamentally defining myself and my choices.<br/><br/> This dream is one showing the most obvious dichotomies of life through one interaction, and how a singular beautiful truth can only be achieved through the simultaneous experience and acceptance of everything at once."
           }
         },
+
+        "quote": "A singular beautiful truth can only be achieved through the simultaenous experience & acceptance of everything at once.",
 
         "tertiary": {
           "template": {
@@ -189,6 +186,12 @@ module.exports = {
             "style": "full",
             "contentType":"video",
             "video": "<iframe src=\"https://www.youtube-nocookie.com/embed/aXo0ng7tpIY?controls=0&vq=hd1080\" frameborder=\"0\" allow=\"accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture\" allowfullscreen></iframe>"
+          },
+          "secondTemplate": {
+            "style":"split",
+            "contentType":"textText",
+            "text":"This musical instrument came to me in a dream. I was floating over it, playing beautiful tones by touching the little glassy shapes that grew out before me like fractal fungi. Suddenly, I woke up, and knew I was supposed to bring it to life. I wrote down what I could in my journal, then later worked on the code to realize it. At first I wrote it as an iPad app back in 2012, but never released it.<br/><br/>It's very cathartic to finally dig up those algorithms again and release my dreams to the public to revel. Next to that entry, I had scribbled a few mysterious lines of text:",
+            "textRight":"Keeping in all in was driving me insane.<br/>I felt nothing; no remorse, no pain.<br/><br/>All these lies are truths when terse.<br/>I feel better now that I feel worse.<br/>It’s no surprise that you heard first<br/>Of the letter that I sent her.<br/><br/>I can see more in your eyes<br/>Than staring into the clearest sea.<br/>Your smile could start a thousand wars,<br/>Or fix all violence and suffering."
           }
         },
 
@@ -273,6 +276,12 @@ module.exports = {
             "style": "full",
             "contentType":"video",
             "video": "<iframe src=\"https://www.youtube.com/embed/SaXJ3msxPv4?controls=0&vq=1080\" frameborder=\"0\" allow=\"accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture\" allowfullscreen></iframe>"
+          },
+          "secondTemplate": {
+            "style": "split",
+            "contentType":"textText",
+            "text":"This piece is an attempt at realistically depicting a view I saw in one of my dreams. I’d been recently thinking about catching up with a friend, and after a few days of thinking about it, I dreamt about it.<br/><br/>While it doesn't capture the immensity of the cloudscape I saw, I'm happy to leave that to the viewer's imagination.",
+            "textRight":"We were having a conversation over a video call, and she told me that she was hiking while talking. I asked her to point the camera at what she was looking at, and she pointed the camera towards what you see in the piece.<br/><br/>Three large glowing ridges on a vertical blanket of clouds, with a silhouette of trees in the foreground in the middle of a lake."
           }
         },
 
@@ -316,20 +325,17 @@ module.exports = {
             "style": "full",
             "contentType":"iframe",
             "iframe": ""
+          },
+          "secondTemplate":{
+            "style":"split",
+            "contentType":"imgText",
+            "img":"secondPrimary.png",
+            "text":"This piece is a web article with surreal pictures. In it, I describe my dreams and intertwine the article with explanations about how dreams contribute to learning and why we experience them. With my photographs, I try to place drawing within real-world settings in order to capture the memory/concept-mashing nature of dreams.<br/><br/>The web article also has a cinemagraph background. Our neighbors had a party and got confetti all over our apartment. I found this scenery surreal and relevant to my piece; an ambient backdrop that invokes the feeling of color and randomness strewn upon a grey and monotonous foundation. I’d like to think our dreams are that fluttery surreal color that sprinkle into our dull lives."
           }
         },
 
         "quote": "I’d like to think our dreams are that fluttery surreal color that sprinkle into our dull lives.",
 
-        "secondary": {
-          "template": {
-            "style":"",
-            "contentType":"imgText",
-            "img":"",
-            "text":""
-          }
-          
-        },
         "tertiary": {
           "template": {
             "style":"full",

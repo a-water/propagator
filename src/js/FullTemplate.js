@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import SplitTemplate from './SplitTemplate';
 
 // ------------------------------------------------------
 // A FullComponent consists of a full width container

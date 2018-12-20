@@ -31,7 +31,7 @@ class SplitTemplate extends Component {
       case 'textText':
         // one of the data.text should be data.textRight
         this.left = this.renderLeft('text', data.text);
-        this.right = this.renderRight('text', data.text);
+        this.right = this.renderRight('text', data.textRight);
         break;
         
       // we shouldn't be here
