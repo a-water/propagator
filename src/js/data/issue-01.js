@@ -45,8 +45,8 @@ module.exports = {
           "template": {
             "style": "split",
             "contentType":"imgText",
-            "img":"",
-            "text":""
+            "img":"secondary.png",
+            "text":"My dreams are obsessive. In them, I hunger endlessly: for righteousness, for power, for beauty, for perfection, for fury. In the day, I deny myself the expression of the burdensome [to me and others] desires of my inner self, so I tamp them down until I dream about the act of getting and about allowing myself to fully live in the emotional stew of being without, but <b>there’s something fearsome about dreams.</b>"
           }
         },
 
@@ -86,7 +86,7 @@ module.exports = {
           "template": {
             "style":"split",
             "contentType":"imgText",
-            "img":"",
+            "img":"secondary.png",
             "text": "My dreams are obsessive. In them, I hunger endlessly: for righteousness, for power, for beauty, for perfection, for fury. In the day, I deny myself the expression of the burdensome [to me and others] desires of my inner self, so I tamp them down until I dream about the act of getting and about allowing myself to fully live in the emotional stew of being without, but there’s something fearsome about dreams."
           }
         },
@@ -126,7 +126,9 @@ module.exports = {
         "secondary": {
           "template": {
             "style": "split",
-            "contentType":"imgText"
+            "contentType":"imgText",
+            "img":"secondary.png",
+            "text":"While this wasn’t the first time I’ve attempted dream journaling, it was the first time I’ve stuck with it. I attribute that difference mainly to the use of a template, which was hugely valuable, and keeping the notebook and pen within reach from my bed.<br/><br/>In retrospect some of the metadata I captured because of the template, such as bed and waking times and duration, were particularly interesting to me."
           }
         },
 
@@ -164,7 +166,7 @@ module.exports = {
 
         "secondary": {
           "template": {
-            "style":"split",
+            "style":"",
             "contentType": "imgText",
             "img":"",
             "text":"The piece depicts the most symbolic, colorfully vivid, detailed and personally resonant dream remembered over my brief “dream period.” Major symbols in the piece have both a cultural and personal importance to me, from both my Eastern ethnic background and my Western upbringing. <b>These symbols represent universal themes, such as freedom, beauty, and openness</b>, of which I’ve had an ever evolving-relationship with throughout my life: at times restrictive, other times enriching, but always fundamentally defining myself and my choices.<br/><br/> This dream is one showing the most obvious dichotomies of life through one interaction, and how a singular beautiful truth can only be achieved through the simultaneous experience and acceptance of everything at once."
@@ -205,7 +207,7 @@ module.exports = {
 
         "secondary": {
           "template": {
-            "style":"split",
+            "style":"",
             "contentType":"imgText"
           }
           
@@ -244,7 +246,7 @@ module.exports = {
 
         "secondary": {
           "template": {
-            "style":"full",
+            "style":"",
             "text":"",
             "img":""
           }
@@ -283,7 +285,7 @@ module.exports = {
 
         "secondary": {
           "template": {
-            "style":"split",
+            "style":"",
             "contentType":"imgText",
             "img":"",
             "text":""
@@ -324,7 +326,7 @@ module.exports = {
 
         "secondary": {
           "template": {
-            "style":"split",
+            "style":"",
             "contentType":"imgText",
             "img":"",
             "text":""

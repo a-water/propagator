@@ -14,9 +14,7 @@ class SplitTemplate extends Component {
 
   // ------------------------------------------------------
   generateSides(data) {
-    console.log('[ generateSides ]', data);
     switch (data.contentType) {
-
       // img left, text right
       case 'imgText':
         this.left = this.renderLeft('img', data.img);
@@ -31,6 +29,9 @@ class SplitTemplate extends Component {
       
       // text left, text right
       case 'textText':
+        // one of the data.text should be data.textRight
+        this.left = this.renderLeft('text', data.text);
+        this.right = this.renderRight('text', data.text);
         break;
         
       // we shouldn't be here
@@ -42,13 +43,18 @@ class SplitTemplate extends Component {
 
   // ------------------------------------------------------
   renderLeft(type, data) {
-    console.log('[ renderLeft ] data:', data);
+    // console.log('[ renderLeft ] data:', data);
     // text on the left
+    let title;
+    if (this.props.isPrimary) {
+      title = <span className="submission-title">{ this.props.subTitle }</span>
+    }
+    
     if (type === 'text') {
       return (
         <div className="split-left">
           <div className="text">
-            <span className="submission-title">{ this.props.subTitle }</span>
+            { title }
             <p dangerouslySetInnerHTML={ this.renderInnerHtml(data) }></p>
           </div>
         </div>
@@ -57,19 +63,34 @@ class SplitTemplate extends Component {
       
     // img on the left
     return (
-      <div className="split-left">img here</div>
+      <div className="split-left img">
+        <img
+          className="img-left" 
+          alt="subImg"
+          src={ require(`../assets/${ this.props.assetDir }/${ data }`) } 
+        />
+      </div>
     );
     
   }
 
   // ------------------------------------------------------
   renderRight(type, data) {
-    console.log('[ renderRight ] data:', data);
-    console.log('assetdir', this.props.assetDir);
+    // console.log('[ renderRight ] data:', data);
     // text on the right
+    let title;
+    if (this.props.isPrimary) {
+      title = <span className="submission-title">{ this.props.subTitle }</span>
+    }
+
     if (type === 'text') {
       return (
-        <div className="split-right">text here</div>
+        <div className="split-right text-right">
+          <div className="text">
+            { title }
+            <p dangerouslySetInnerHTML={ this.renderInnerHtml(data) }></p>
+          </div>
+        </div>
       )
     }
 
@@ -77,7 +98,8 @@ class SplitTemplate extends Component {
     return (
       <div className="split-right">
         <img 
-          alt="primary"
+          className="img-right"
+          alt="subImg"
           src={ require(`../assets/${ this.props.assetDir }/${ data }`) } 
         />
       </div>

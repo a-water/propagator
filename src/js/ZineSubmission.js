@@ -56,7 +56,11 @@ class ZineSubmission extends Component {
     if (secondaryTemplate.style === 'split') {
       return (
         <div className="zine-section">
-          <SplitTemplate data={ secondaryTemplate }/>
+          <SplitTemplate 
+            assetDir={ data.assetDir }
+            isPrimary={ false } 
+            data={ secondaryTemplate }
+          />
         </div>
       );
     } else {
