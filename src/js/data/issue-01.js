@@ -83,12 +83,18 @@ module.exports = {
         "quote": "I\"m still not quite ready to speak of it.",
 
         "secondary": {
-          "template": "split",
-          "content": ""
+          "template": {
+            "style":"split",
+            "contentType":"imgText",
+            "img":"",
+            "text": "My dreams are obsessive. In them, I hunger endlessly: for righteousness, for power, for beauty, for perfection, for fury. In the day, I deny myself the expression of the burdensome [to me and others] desires of my inner self, so I tamp them down until I dream about the act of getting and about allowing myself to fully live in the emotional stew of being without, but there’s something fearsome about dreams."
+          }
         },
 
         "tertiary": {
-          "template": ""
+          "template": {
+            "style":""
+          }
         }
       }
     },
@@ -199,7 +205,8 @@ module.exports = {
 
         "secondary": {
           "template": {
-
+            "style":"split",
+            "contentType":"imgText"
           }
           
         },
@@ -237,7 +244,9 @@ module.exports = {
 
         "secondary": {
           "template": {
-
+            "style":"full",
+            "text":"",
+            "img":""
           }
           
         },
@@ -274,7 +283,10 @@ module.exports = {
 
         "secondary": {
           "template": {
-
+            "style":"split",
+            "contentType":"imgText",
+            "img":"",
+            "text":""
           }
           
         },
@@ -312,7 +324,10 @@ module.exports = {
 
         "secondary": {
           "template": {
-
+            "style":"split",
+            "contentType":"imgText",
+            "img":"",
+            "text":""
           }
           
         },

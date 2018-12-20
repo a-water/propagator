@@ -34,7 +34,6 @@ class ZineSubmission extends Component {
         </div>
       );
     } else if (primaryTemplate.style === 'full') {
-      
       return (
         <div className="zine-section">
           { /* TODO: Move below to FullTemplate component */ }
@@ -77,10 +76,18 @@ class ZineSubmission extends Component {
 
   // ------------------------------------------------------
   renderSecondary(data) {
-    return (
-      <div className="zine-section">
-      </div>
-    );
+    let secondaryTemplate = data.secondary.template;
+    if (secondaryTemplate.style === 'split') {
+      return (
+        <div className="zine-section">
+          <SplitTemplate template={ secondaryTemplate }/>
+        </div>
+      );
+    } else {
+      // other secondary style templates? 
+      console.log('[renderSecondary] style: ', secondaryTemplate.style);
+    }
+   
   }
 
   // ------------------------------------------------------

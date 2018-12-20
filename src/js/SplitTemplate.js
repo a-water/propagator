@@ -7,7 +7,43 @@ import React, { Component } from 'react';
 // ------------------------------------------------------
 
 class SplitTemplate extends Component {
+
+  generateSides(data) {
+    console.log(data);
+    switch (data.contentType) {
+      case 'imgText':
+        
+        break;
+      case 'textImg':
+        
+        break;
+      case 'textText':
+      
+        break;
+        
+      default: 
+        console.log('Unknown contentType: ', data.contentType);
+        return null;
+    }
+  }
+
+  // ------------------------------------------------------
+  renderLeft() {
+
+  }
+
+  // ------------------------------------------------------
+  renderRight() {
+
+  }
+
+  // ------------------------------------------------------
+
   render() {
+    if (this.props.template) {
+      this.generateSides(this.props.template);
+    }
+
     return (
       <div className="split-template"></div> 
     )
