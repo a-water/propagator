@@ -33,7 +33,7 @@ module.exports = {
         "primary": {
           "template": {
             "style": "split",
-            "contentType":"imgText",
+            "contentType":"textImg",
             "img":"primary.png",
             "text": "It’s supposed to be in the fridge. It’s going to spoil. Why is it out of the fridge? Why would it be on the countertop? I thought I put it in the fridge. Did they take it out? It has enough preservatives in it to be left out for just one night without spoiling, right? But how damaging are the preservatives to my body? How do they preserve mayo? Should preservatives in food be legal? Are we weaker because of them? Should I make my own mayo? I should be making my own mayo. I’m going to make my own mayo. Oh no. My eggs have gone bad."
           }
@@ -74,7 +74,7 @@ module.exports = {
         "primary": {
           "template": {
             "style":"split",
-            "contentType": "imgText",
+            "contentType": "textImg",
             "img": "primary.png",
             "text": "This year I explored new territories, embraced new experiences and in a way started connecting the dots dating way back to my teenage self. Also for about half the time I was very, very stressed out. At the end of it I notice how I see myself as a somewhat different person but still left with lots of unknown parts to figure out. I may be hiding those parts unconsciously but my dreams surfaced them more than anything."
           }
@@ -115,7 +115,7 @@ module.exports = {
         "primary": {
           "template": {
             "style":"split",
-            "contentType":"imgText",
+            "contentType":"textImg",
             "img": "primary.png",
             "text": "Location is typically the aspect of my dreams I remember most clearly, so I was interested in seeing if recording them caused me to focus more on a narrative or drew out other details about the space. What I found was that in fact many of my dreams do center around spaces, so I wanted to create a diagram that helped me see patterns in those locations.<br/><br/>Each dream is represented as a circle, where its size is based on the number of lines I wrote about that dream, and it’s fill is darkened based on the time I spent asleep, which ranged from 4 to 10.5 hours. The dream circles are nested within larger circles representing categories of location. At the top level the dreams are split about evenly between indoor and outdoor locations, with a smaller number that were ambiguous or involved moving between the two. Finally, a line traces through the dreams in chronological order.<br/><br/>Interestingly, after especially long nights of sleep I seem to write in more detail about dreams involving interior spaces, but less about dreams involving exterior locations."
           }
@@ -234,7 +234,7 @@ module.exports = {
         "primary": {
           "template": {
             "style": "split",
-            "contentType":"imgText",
+            "contentType":"textImg",
             "img": "primary.png",
             "text": "I was given a dead fish by strangers, and made to feel quite personally guilty about it’s lifeless state. Within the context of this guilt I was persuaded to hurry up and get it into the building over there. I panicked and hurried my way, stressed as can be, into an unknown government-style building. When I realized, upon entry, that there was no purpose for me here, I turned around to leave. The only exit was through a gateway-barrier resembling that of an airport security clearance point. I would be required, if I were to exit, to give my genetic information in a variety of forms. I was trapped. This is a true terror. I yell out a long, drawn out, “No!”"
           }

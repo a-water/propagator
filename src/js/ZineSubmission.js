@@ -3,6 +3,7 @@ import FullTemplate from './FullTemplate';
 import SplitTemplate from './SplitTemplate';
 
 class ZineSubmission extends Component {
+  // ------------------------------------------------------
   renderInnerHtml(content) {
     return { __html: content };
   }
@@ -14,30 +15,17 @@ class ZineSubmission extends Component {
     if (primaryTemplate.style === 'split') {
       return (
         <div className="zine-section">
-          { /* TODO: Move below to SplitTemplate component */ }
-          <div className="split-template">
-            <div className="split-left">
-              <div className="text">
-                <span className="submission-title">{ data.title }</span>
-                <p dangerouslySetInnerHTML={ this.renderInnerHtml(primaryTemplate.text) }></p>
-              </div>
-            </div>
-            <div className="split-right">
-              <img 
-                alt="primary"
-                src={ 
-                  require(`../assets/${ data.assetDir }/${ primaryTemplate.img }`)
-                } 
-              />
-            </div>
-          </div>
+          <SplitTemplate 
+            subTitle={ data.title }
+            assetDir={ data.assetDir }
+            isPrimary={ true } 
+            data={ primaryTemplate }
+          />
         </div>
       );
     } else if (primaryTemplate.style === 'full') {
       return (
         <div className="zine-section">
-          { /* TODO: Move below to FullTemplate component */ }
-          { /* TODO: FullTemplate component supports different media types: video, iFrame, text */ }
           <FullTemplate
             submissionData= { data }
             primaryTemplate= { primaryTemplate }
@@ -68,7 +56,7 @@ class ZineSubmission extends Component {
     if (secondaryTemplate.style === 'split') {
       return (
         <div className="zine-section">
-          <SplitTemplate template={ secondaryTemplate }/>
+          <SplitTemplate data={ secondaryTemplate }/>
         </div>
       );
     } else {
