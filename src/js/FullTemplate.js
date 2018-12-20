@@ -6,9 +6,9 @@ import React, { Component } from 'react';
 // text, or webpage (embedded iframe), as well as a 
 // SplitTemplate component below that.
 // ------------------------------------------------------
+
 class FullTemplate extends Component {
 
-  // ------------------------------------------------------
   constructor(props) {
     super(props);
 
@@ -23,18 +23,20 @@ class FullTemplate extends Component {
     }
   }
   
-  // ------------------------------------------------------
   render() {
     return (
       <div className="full-template">
         <div className="full-template-inner">
           <div className="submission-title-container">
-            <span className="submission-title">{ this.props.submissionData.title }</span>
+            {
+              this.props.isPrimary ?
+              <span className="submission-title">{ this.props.subTitle }</span> : null
+            }
           </div>
 
           <p
-            className={this.state.contentTypeMap.get(this.props.primaryTemplate.contentType)}
-            dangerouslySetInnerHTML={ this.props.renderInnerHtml(this.props.primaryTemplate[this.props.primaryTemplate.contentType]) }>
+            className={this.state.contentTypeMap.get(this.props.data.contentType)}
+            dangerouslySetInnerHTML={ this.props.renderInnerHtml(this.props.data[this.props.data.contentType]) }>
           </p>
 
         </div>

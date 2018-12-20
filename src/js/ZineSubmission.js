@@ -27,8 +27,9 @@ class ZineSubmission extends Component {
       return (
         <div className="zine-section">
           <FullTemplate
-            submissionData= { data }
-            primaryTemplate= { primaryTemplate }
+            subTitle= { data.title }
+            isPrimary= { true }
+            data={ primaryTemplate }
             renderInnerHtml= { this.renderInnerHtml.bind(this) }
           />
         </div>
