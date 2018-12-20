@@ -32,7 +32,7 @@
 .split-template .split-right .text {
   margin-top: 40px;
   margin-bottom: 40px;
-  max-width: 60%;
+  max-width: 70%;
   align-self: center;
 }
 
@@ -45,7 +45,7 @@
   font-style: italic;
   font-weight: 300;
   font-size: 0.85em;
-  line-height: 24px;
+  line-height: 22px;
   margin: 22px 0px;
 }
 

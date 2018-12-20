@@ -87,7 +87,7 @@ module.exports = {
             "style":"split",
             "contentType":"imgText",
             "img":"secondary.png",
-            "text": "My dreams are obsessive. In them, I hunger endlessly: for righteousness, for power, for beauty, for perfection, for fury. In the day, I deny myself the expression of the burdensome [to me and others] desires of my inner self, so I tamp them down until I dream about the act of getting and about allowing myself to fully live in the emotional stew of being without, but there’s something fearsome about dreams."
+            "text": "Throughout the month, I realized that half of my dreams are anxiety dreams, and the rest of them have something to do with my deepest thoughts that I am not speaking of in my day-to-day life. And that’s why I had to really obfuscate images of my dream journal because I am still not ready to speak of it."
           }
         },
 
@@ -117,7 +117,7 @@ module.exports = {
             "style":"split",
             "contentType":"textImg",
             "img": "primary.png",
-            "text": "Location is typically the aspect of my dreams I remember most clearly, so I was interested in seeing if recording them caused me to focus more on a narrative or drew out other details about the space. What I found was that in fact many of my dreams do center around spaces, so I wanted to create a diagram that helped me see patterns in those locations.<br/><br/>Each dream is represented as a circle, where its size is based on the number of lines I wrote about that dream, and it’s fill is darkened based on the time I spent asleep, which ranged from 4 to 10.5 hours. The dream circles are nested within larger circles representing categories of location. At the top level the dreams are split about evenly between indoor and outdoor locations, with a smaller number that were ambiguous or involved moving between the two. Finally, a line traces through the dreams in chronological order.<br/><br/>Interestingly, after especially long nights of sleep I seem to write in more detail about dreams involving interior spaces, but less about dreams involving exterior locations."
+            "text": "Location is typically the aspect of my dreams I remember most clearly, so I was interested in seeing if recording them caused me to focus more on a narrative or draw out other details about the space. What I found was that many of my dreams do in fact center around spaces, so I wanted to create a diagram that helped me see patterns in those locations.<br/><br/>Each dream is represented as a circle, where size is based on the number of lines I wrote about that dream, and fill is darkened based on the time I spent asleep, which ranged from 4 to 10.5 hours. The dream circles are nested within larger circles, which represent categories of location. At the top level, the dreams are split almost evenly between indoor and outdoor locations, with a smaller number that were either ambiguous or involved moving between the two. Finally, a line traces through the dreams in chronological order.<br/><br/>Interestingly, after especially long nights of sleep I seem to write about dreams involving interior spaces in more detail, but less about dreams involving exterior locations."
           }
         },
 
