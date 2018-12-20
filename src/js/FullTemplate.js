@@ -1,13 +1,13 @@
 import React, { Component } from 'react';
-import SplitTemplate from './SplitTemplate';
 
 // ------------------------------------------------------
 // A FullComponent consists of a full width container
 // that displays one type of media: video (embedded iframe),
 // text, or webpage (embedded iframe), as well as a 
-// SplitTemplate component below that.
+// SplitTemplate component below that. This SplitTemplate
+// is called "secondTemplate" in the data, and is added 
+// in the ZineSubmission renderPrimary() function.
 // ------------------------------------------------------
-
 class FullTemplate extends Component {
 
   // ------------------------------------------------------
@@ -20,9 +20,7 @@ class FullTemplate extends Component {
     contentTypeMap.set("iframe", "");
     contentTypeMap.set("img", "");
 
-    this.state = {
-      contentTypeMap
-    }
+    this.state = { contentTypeMap }
   }
   
   // ------------------------------------------------------

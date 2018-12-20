@@ -2,17 +2,12 @@
   height: 100%;
 }
 
-.zine-toc ul {
-  margin: 0px;
-  padding-left: 0px;
-}
-
 .zine-toc ul li {
   list-style-type: decimal-leading-zero;
   font-style: italic;
   font-weight: 300;
-  font-size: 18px;
-  line-height: 40px;
+  font-size: 1em;
+  line-height: 2.2em;
 }
 
 .zine-toc a {
@@ -36,7 +31,8 @@
   float: right;
 	display: flex;
 	justify-content: center;
-	align-items: center;
+  align-items: center;
+  padding: 40px;
 }
 
 .zine-cover {
