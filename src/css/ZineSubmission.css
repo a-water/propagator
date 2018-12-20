@@ -44,7 +44,7 @@
 .text {
   font-style: italic;
   font-weight: 300;
-  font-size: 0.85em;
+  font-size: 0.8em;
   line-height: 22px;
   margin: 22px 0px;
 }
@@ -99,7 +99,6 @@
 .full-template-text {
   font-weight: 300;
   font-style: italic;
-  font-size: 0.875em;
   line-height: 22px;
   max-width: 80%;
 }

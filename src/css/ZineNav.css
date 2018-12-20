@@ -1,7 +1,7 @@
 .zine-nav {
   width: 100%;
-  background: #272727;
-  height: 80px;
+  background: #2d00ff;
+  height: 70px;
   display: flex;
   justify-content: center;
   color: white;
@@ -28,23 +28,23 @@
 .zine-controls-btn {
   width: 50px;
   height: 50px;
-  border: 2px solid #BFBFBF;
+  border: 2px solid white;
   border-radius: 50%;
-  background: #272727;
+  background: #2d00ff;
   color: white;
 }
 
 .zine-controls-btn:hover {
   cursor: pointer;
-  background: #DDDDDD;
-  color: #272727;
+  background: white;
+  color: #2d00ff;
 }
 
 .zine-controls-btn:disabled {
-  cursor: auto;
-  background: #373737;
-  color: #272727;
-  border: 2px solid #373737;
+  cursor: default;
+  background: #6661f8;
+  color: #2d00ff;
+  border: 2px solid #6661f8;
 }
 
 #prev-btn {

@@ -1,7 +1,7 @@
 .nav-bar {
   width: 100%;
   background: black;
-  height: 60px;
+  height: 48px;
   display: flex;
   justify-content: center;
   color: white;
@@ -18,7 +18,8 @@
 
 #propagator-title {
   color: white;
-  font-size: 1.2em;
+  font-size: 1.0em;
+  font-style: italic;
 }
 
 .current-issue-meta {
@@ -28,7 +29,7 @@
 
 .issue-title {
   font-style: italic;
-  font-size: 0.975em;
+  font-size: 0.875em;
 }
 
 .issue-num {

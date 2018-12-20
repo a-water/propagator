@@ -11,8 +11,7 @@ class NavBar extends Component {
         <div className="nav-bar-inner">
           <Link id="propagator-title" to="/">PROPAGATOR</Link>
           <div className="current-issue-meta">
-            <span className="issue-title">DREAM MACHINE</span><br/>
-            <span className="issue-num">ISSUE 01</span>
+            <span className="issue-title">ISSUE 01: DREAM MACHINE</span>
           </div>
         </div>
       </div>
