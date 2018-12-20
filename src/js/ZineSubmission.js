@@ -27,6 +27,7 @@ class ZineSubmission extends Component {
       return (
         <div className="zine-section">
           <FullTemplate
+            assetDir={ data.assetDir }
             subTitle= { data.title }
             isPrimary= { true }
             data={ primaryTemplate }
@@ -65,11 +66,29 @@ class ZineSubmission extends Component {
         </div>
       );
     } else {
-      // other secondary style templates? 
       console.log('[renderSecondary] style: ', secondaryTemplate.style);
     }
-   
   }
+
+  // ------------------------------------------------------
+  renderTertiary(data) {
+    let tertiaryTemplate = data.tertiary.template;
+    if (tertiaryTemplate.style === 'full') {
+      return (
+        <div className="zine-section">
+          <FullTemplate
+            assetDir={ data.assetDir }
+            isPrimary= { false }
+            data={ tertiaryTemplate }
+            renderInnerHtml= { this.renderInnerHtml.bind(this) }
+          />
+        </div>
+      )
+    } else {
+      console.log('[renderTertiary] style: ', tertiaryTemplate.style);
+    }
+  }
+
 
   // ------------------------------------------------------
   render() {
@@ -79,6 +98,10 @@ class ZineSubmission extends Component {
         { this.renderPrimary(content) }
         { this.renderQuote(content) }
         { this.renderSecondary(content) }
+        {
+          content.hasOwnProperty("tertiary") ?
+          this.renderTertiary(content) : null
+        }
       </div>
     )
   }

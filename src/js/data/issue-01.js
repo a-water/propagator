@@ -48,13 +48,6 @@ module.exports = {
             "img":"secondary.png",
             "text":"My dreams are obsessive. In them, I hunger endlessly: for righteousness, for power, for beauty, for perfection, for fury. In the day, I deny myself the expression of the burdensome [to me and others] desires of my inner self, so I tamp them down until I dream about the act of getting and about allowing myself to fully live in the emotional stew of being without, but <b>there’s something fearsome about dreams.</b>"
           }
-        },
-
-        "tertiary": {
-          "template": {
-            "style":"",
-            "contentType":""
-          }
         }
       }
     },
@@ -88,12 +81,6 @@ module.exports = {
             "contentType":"imgText",
             "img":"secondary.png",
             "text": "Throughout the month, I realized that half of my dreams are anxiety dreams, and the rest of them have something to do with my deepest thoughts that I am not speaking of in my day-to-day life. And that’s why I had to really obfuscate images of my dream journal because I am still not ready to speak of it."
-          }
-        },
-
-        "tertiary": {
-          "template": {
-            "style":""
           }
         }
       }
@@ -135,7 +122,8 @@ module.exports = {
         "tertiary": {
           "template": {
             "style":"full",
-            "contentType":"img"
+            "contentType":"img",
+            "img": "tertiary.png"
           }
         }
       }
@@ -175,8 +163,9 @@ module.exports = {
 
         "tertiary": {
           "template": {
-            "style":"",
-            "contentType":"text"
+            "style":"full",
+            "contentType":"text",
+            "text": "While I’ve had previous half-hearted attempts at dream journaling, this is the first time that I’ve mentally and consciously tried to remember my dreams. Surprisingly, it only took a couple of evenings of conscious pre-sleep mental preparation for me to be able to remember most of what I’d dreamt.<br/><br/> The intent to remember my dreams seemed to force my body into a routine of short periods (2-3 hours at a time) of deep sleep alternated by a few moments of lucidity, where I’d have my most vivid dreams in the sleep “session” right before full wakefulness. While they have not been restful evenings in the slightest, they are always exceptionally creatively stimulating."
           }
         }
       }
@@ -216,7 +205,9 @@ module.exports = {
         },
         "tertiary": {
           "template": {
-
+            "style": "full",
+            "contentType":"text",
+            "text":"You’re not supposed to remember your dreams. When you remember your dreams it’s when you were woken unexpectedly, or when you consciously or unconsciously fled the dream before returning it to the Dreammaster.<br/><br/>We only borrow our dreams from him every night, but when we leave a dream prematurely we are stealing that dream - bringing it into our reality and hiding it away in our memories.<br/><br/>However precious or horrid your stolen dreams may be, remember that the Dreammaster will claim them back from you. He always does, in the end."
           }
         }
       } 
@@ -256,7 +247,9 @@ module.exports = {
         },
         "tertiary": {
           "template": {
-
+            "style":"full",
+            "contentType":"text",
+            "text":"The more I write my dreams the more I remember them.<br/>The more I remember my dreams, the less estranged from them I become.<br/> They feel closer and seem clearer.<br/><br/>A meeting becomes an acquaintance; an acquaintanceship becomes a friendship.<br/><br/>Night after night, day after day, mundanity after absurdity,<br/> the dream and I bond through the records of my memory.<br/><br/>The bond is a bridge.<br/><br/>One night my memory crosses the bridge, and I bare witness to the dream in real time.<br/>From this, I see no path other than forward."
           }
         }
       } 
@@ -296,7 +289,9 @@ module.exports = {
         },
         "tertiary": {
           "template": {
-
+            "style":"full",
+            "contentType":"img",
+            "img": "tertiary.png"
           }
         }
       } 
@@ -337,12 +332,13 @@ module.exports = {
         },
         "tertiary": {
           "template": {
-
+            "style":"full",
+            "contentType":"text",
+            "text":"Trying to grasp my dreams after I wake up is like trying to grab hold of water from a rushing stream with one hand. Sometimes I remember details, but usually I don’t.<br/><br/>Nonetheless, I always wrote down what the general theme of the experience of the dream was. Was it a coding dream? A dream about family? Or a dream about politics? If I could at least write that down in my journal, I could string along what memories my brain was trying to reactivate."
           }
         }
       } 
     }
-  
     
     // ------------------------------------------------------
     // 09. tbd by Ashwath Anand
