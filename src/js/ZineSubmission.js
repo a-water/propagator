@@ -115,24 +115,26 @@ class ZineSubmission extends Component {
     let content = this.props.sub.content;
     return (
       <div className="zine-submission">
-        { this.renderPrimary(content) }
+        <div className="zine-submission-inner">
+          { this.renderPrimary(content) }
 
-        {
-          content.primary.template.style === 'full' ?
-          this.renderSecondaryPrimary(content) : null
-        }
+          {
+            content.primary.template.style === 'full' ?
+            this.renderSecondaryPrimary(content) : null
+          }
 
-        { this.renderQuote(content) }
+          { this.renderQuote(content) }
 
-        { 
-          content.hasOwnProperty('secondary') ?
-          this.renderSecondary(content) : null
-        }
+          { 
+            content.hasOwnProperty('secondary') ?
+            this.renderSecondary(content) : null
+          }
 
-        {
-          content.hasOwnProperty('tertiary') ?
-          this.renderTertiary(content) : null
-        }
+          {
+            content.hasOwnProperty('tertiary') ?
+            this.renderTertiary(content) : null
+          }
+        </div>
       </div>
     )
   }

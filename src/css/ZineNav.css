@@ -5,6 +5,8 @@
   display: flex;
   justify-content: center;
   color: white;
+  position: fixed;
+  top: 48px;
 }
 
 .zine-nav-inner {
