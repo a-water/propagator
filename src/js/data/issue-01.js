@@ -166,9 +166,9 @@ module.exports = {
 
         "secondary": {
           "template": {
-            "style":"",
+            "style":"split",
             "contentType": "imgText",
-            "img":"",
+            "img":"secondary.png",
             "text":"The piece depicts the most symbolic, colorfully vivid, detailed and personally resonant dream remembered over my brief “dream period.” Major symbols in the piece have both a cultural and personal importance to me, from both my Eastern ethnic background and my Western upbringing. <b>These symbols represent universal themes, such as freedom, beauty, and openness</b>, of which I’ve had an ever evolving-relationship with throughout my life: at times restrictive, other times enriching, but always fundamentally defining myself and my choices.<br/><br/> This dream is one showing the most obvious dichotomies of life through one interaction, and how a singular beautiful truth can only be achieved through the simultaneous experience and acceptance of everything at once."
           }
         },
@@ -207,8 +207,10 @@ module.exports = {
 
         "secondary": {
           "template": {
-            "style":"",
-            "contentType":"imgText"
+            "style":"split",
+            "contentType":"imgText",
+            "img": "secondary.png",
+            "text": "My mom gave me this dream journal when I was a teenager. I've used it ever since to write poems, inventions, and images that come to me while dreaming or on the blurry edge between waking and sleeping.<br/><br/>Salvador Dali and The Surrealists would often purposefully invoke this ultra-creative state by balancing a spoon in his hand—as soon as he fell asleep, his grip would loosen and the spoon would clatter to the floor, waking him up so he could harness the ideas and visions rising out of his transitioning brain like tiny green sprouts rising from mud.<br/><br/>I’ve never forced the ideas in this way, but they come naturally often enough, and I store them away in my little journal."
           }
           
         },
@@ -277,7 +279,7 @@ module.exports = {
           "template": {
             "style": "full",
             "contentType":"video",
-            "video": ""
+            "video": "<iframe src=\"https://www.youtube.com/embed/SaXJ3msxPv4?controls=0&vq=1080\" frameborder=\"0\" allow=\"accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture\" allowfullscreen></iframe>"
           }
         },
 
@@ -285,10 +287,10 @@ module.exports = {
 
         "secondary": {
           "template": {
-            "style":"",
+            "style":"split",
             "contentType":"imgText",
-            "img":"",
-            "text":""
+            "img":"secondary.png",
+            "text":"I am not new to dream journaling. In the past I used it primarily to enhance dream recall in an effort to have more lucid dreams. I was not as successful as I wanted to be and slowly lost the habit, but upon hearing about this project, my interest was sparked again. Amazingly, I learned I still visually remember some dreams from more than a decade ago!"
           }
           
         },
