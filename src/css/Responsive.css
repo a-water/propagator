@@ -10,11 +10,28 @@
     line-height: 2.2em;
   }
 
-  /* Zine Nav */
+  .zine-content {
+    padding-top: 102px;
+  }
 
+  /* Zine Nav */
+  .zine-nav {
+    height: 54px;
+  }
+
+  .contributor-meta {
+    line-height: 1em;
+  }
+
+  .contributor-name {
+    font-size: 0.7em;
+  }
+  
+  .contributor-creds {
+    font-size: 0.5em;
+  }
 
   /* SplitTemplates */
-
   .split-template {
     display: block;
   }
@@ -31,5 +48,13 @@
     max-width: 80%;
   }
   
+  /* FullTemplate */
+  .full-template-inner {
+    padding: 60px 0px;
+  }
+
+  .full-template-inner.text {
+    max-width: 100%;
+  }
 }
   

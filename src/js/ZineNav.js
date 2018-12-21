@@ -37,6 +37,7 @@ class ZineNav extends Component {
               { this.props.creds.toLowerCase() }
             </span>
           </div>
+          
           <div className="zine-controls">
             <Link to={`/issue-01/${ this.props.previousSubmissionTitle.replace(/ /g, "_") }`}>
               <button
@@ -46,7 +47,9 @@ class ZineNav extends Component {
                 onClick={ this.props.handleDecrementPage }
               >PREV</button>
             </Link>
+
             <span className="page-indicator-label">{ (this.props.currentPage + 1) + "/" + (this.props.numPages + 1) }</span>
+
             <Link to={`/issue-01/${ this.props.nextSubmissionTitle.replace(/ /g, "_") }`}>
               <button
                 disabled={ this.props.currentPage === this.props.numPages }
