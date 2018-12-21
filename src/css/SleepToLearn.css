@@ -51,6 +51,10 @@
   height: 100%;
 }
 
+.col-12 {
+  margin-bottom: -12px;
+}
+
 .sleep-container {
   height: 100%;
   display: flex;
