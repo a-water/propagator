@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css?family=Nunito:300');
+
 .custom-site {
   width: 85%;
   display: flex;
@@ -14,9 +16,7 @@
 }
 
 #sleep-to-learn {
-  /* font-style: italic; */
-  font-family: "Helvetica", sans-serif;
-  /* font-size: 1.4rem; */
+  font-family: "Nunito", sans-serif;
   line-height: 1.5;
   color: white;
   border: 5px solid blue;
@@ -29,16 +29,21 @@
 #sleep-to-learn h1, 
 #sleep-to-learn h2 {
   text-align: center;
+  text-shadow: #000 0 0 10px;
 }
 
 #sleep-to-learn h1 {
-  font-size: 3rem;
-  margin-top: 50%;
-  text-shadow: #000 0 0 10px;
+  font-size: 4em;
+  margin-top: 40%;
+  margin-bottom: 0px;
 }
 
 #sleep-to-learn h2 {
-  text-shadow: #000 0 0 10px;
+  font-size: 2em;
+}
+
+#sleep-to-learn p {
+  font-size: 1.2em;
 }
 
 .fullscreen-bg__video {
@@ -48,19 +53,27 @@
 
 .sleep-container {
   height: 100%;
+  display: flex;
   overflow: scroll;
   position: absolute;
   width: 100%;
-  /* margin-top: 50%; */
-  padding: 0 15%;
+  padding: 0 5%;
   top: 0;
   left: 50%;
   transform: translateX(-50%);
 }
 
+.sleep-container img {
+  max-width: 100%;
+}
+
 .essay {
   background-color: rgba(0, 0, 0, 0.75);
   padding: 15px;
+  display: flex;
+  flex-direction: column;
+  margin-left: 12%;
+  margin-right: 12%;
 }
 
 .round-top {

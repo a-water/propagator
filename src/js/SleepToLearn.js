@@ -36,7 +36,7 @@ class SleepToLearn extends Component {
           </div>
           <div className="row justify-content-center">
             <div className="col-12">
-              {/* <img src="media/subunit.jpeg" className="img-fluid" alt="Two friends walk to sub-unit. Walking past family at kitchen table."/> */}
+              <img src={ require(`../assets/sleep-to-learn/media/subunit.jpeg`) } className="img-fluid" alt="Two friends walk to sub-unit. Walking past family at kitchen table."/>
             </div>
           </div>
           <div className="row justify-content-center">
@@ -48,7 +48,7 @@ class SleepToLearn extends Component {
           </div>
           <div className="row justify-content-center">
             <div className="col-12">
-              {/* <img src="media/windy%20road.jpeg" className="img-fluid" alt="Drawing of roller coaster road taped to a road barrier sign."/> */}
+              <img src={ require(`../assets/sleep-to-learn/media/windy road.jpeg`) } className="img-fluid" alt="Drawing of roller coaster road taped to a road barrier sign."/>
             </div>
           </div>
           <div className="row justify-content-center">
@@ -64,7 +64,7 @@ class SleepToLearn extends Component {
           </div>
           <div className="row justify-content-center">
             <div className="col-12">
-              {/* <img src="media/sleep%20paralysis.jpeg" className="img-fluid" alt="Drawing of sleep paralysis tucked into bed."/> */}
+              <img src={ require(`../assets/sleep-to-learn/media/sleep paralysis.jpeg`) } className="img-fluid" alt="Drawing of sleep paralysis tucked into bed."/>
             </div>
           </div>
           <div className="row justify-content-center">
