@@ -9,6 +9,12 @@ class ZineSubmission extends Component {
   }
 
   // ------------------------------------------------------
+
+  componentDidMount() {
+    window.scrollTo(0, 0);
+  }
+
+  // ------------------------------------------------------
   renderPrimary(data) {
     let primaryTemplate = data.primary.template;
 

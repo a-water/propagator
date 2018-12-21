@@ -1,0 +1,35 @@
+@media screen and (max-width:850px) {
+  /* TOC */
+  .zine-cover,
+  .zine-toc-container {
+    width: 100%
+  }
+
+  .zine-toc ul li {
+    font-size: 0.7em;
+    line-height: 2.2em;
+  }
+
+  /* Zine Nav */
+
+
+  /* SplitTemplates */
+
+  .split-template {
+    display: block;
+  }
+
+  .split-template .split-left,
+  .split-template .split-right {
+    width: 100%;
+  }
+
+  .split-template .split-left .text,
+  .split-template .split-right .text {
+    margin-top: 25px;
+    margin-bottom: 25px;
+    max-width: 80%;
+  }
+  
+}
+  
