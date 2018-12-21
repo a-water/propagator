@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css?family=Nunito:300');
 
 .custom-site {
-  width: 85%;
+  width: 90%;
   display: flex;
   align-items: center;
   flex-direction: column;
@@ -23,7 +23,7 @@
   width: 100%;
   position: relative;
   overflow: hidden;
-  height: 800px;
+  max-height: 600px;
 }
 
 #sleep-to-learn h1, 
@@ -34,7 +34,7 @@
 
 #sleep-to-learn h1 {
   font-size: 4em;
-  margin-top: 40%;
+  margin-top: 25%;
   margin-bottom: 0px;
 }
 
@@ -54,7 +54,7 @@
 .sleep-container {
   height: 100%;
   display: flex;
-  overflow: scroll;
+  overflow: auto;
   position: absolute;
   width: 100%;
   padding: 0 5%;
