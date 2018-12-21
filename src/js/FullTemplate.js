@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import renderHTML from 'react-render-html';
 
 // ------------------------------------------------------
 // A FullComponent consists of a full width container
@@ -42,9 +43,9 @@ class FullTemplate extends Component {
 
       case 'iframe':
         return (
-          <div
-            className={ this.state.contentTypeMap.get(this.props.data.contentType) }
-            dangerouslySetInnerHTML={ this.props.renderInnerHtml(this.props.data[this.props.data.contentType]) }></div>
+          <div className={ this.state.contentTypeMap.get(this.props.data.contentType) }>
+            { renderHTML(this.props.iframeData.first + this.props.iframeData.second) }
+          </div>
         );
 
       case 'img':
