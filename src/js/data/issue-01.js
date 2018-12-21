@@ -323,8 +323,7 @@ module.exports = {
         "primary": {
           "template": {
             "style": "full",
-            "contentType":"iframe",
-            "iframe": ""
+            "contentType":"custom-site"
           },
           "secondTemplate":{
             "style":"split",

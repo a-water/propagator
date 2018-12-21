@@ -1,7 +1,6 @@
 import React, { Component } from 'react';
 import FullTemplate from './FullTemplate';
 import SplitTemplate from './SplitTemplate';
-import htmlData from './data/sleep-to-learn';
 
 class ZineSubmission extends Component {
   // ------------------------------------------------------
@@ -32,7 +31,6 @@ class ZineSubmission extends Component {
             subTitle= { data.title }
             isPrimary= { true }
             data={ primaryTemplate }
-            iframeData={ primaryTemplate.contentType === 'iframe' ? htmlData : null }
             renderInnerHtml= { this.renderInnerHtml.bind(this) }
           />
         </div>

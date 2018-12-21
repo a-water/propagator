@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import renderHTML from 'react-render-html';
+import SleepToLearn from './SleepToLearn';
 
 // ------------------------------------------------------
 // A FullComponent consists of a full width container
@@ -18,7 +18,7 @@ class FullTemplate extends Component {
     let contentTypeMap = new Map();
     contentTypeMap.set("text", "full-template-text");
     contentTypeMap.set("video", "video-embed-container");
-    contentTypeMap.set("iframe", "");
+    contentTypeMap.set("custom-site", "custom-site");
     contentTypeMap.set("img", "");
 
     this.state = { contentTypeMap }
@@ -41,10 +41,10 @@ class FullTemplate extends Component {
             dangerouslySetInnerHTML={ this.props.renderInnerHtml(this.props.data[this.props.data.contentType]) }></div>
         );
 
-      case 'iframe':
+      case 'custom-site':
         return (
           <div className={ this.state.contentTypeMap.get(this.props.data.contentType) }>
-            { renderHTML(this.props.iframeData.first + this.props.iframeData.second) }
+            <SleepToLearn />
           </div>
         );
 
@@ -73,7 +73,7 @@ class FullTemplate extends Component {
       <div className="full-template">
         <div className={ 'full-template-inner ' + this.props.data.contentType }>
           {
-            this.props.isPrimary ?
+            this.props.isPrimary && this.props.data.contentType !== 'custom-site'?
             <div className="submission-title-container">
               <span className="submission-title">{ this.props.subTitle }</span>
             </div> : null
