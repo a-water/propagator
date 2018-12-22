@@ -11,14 +11,14 @@
   }
 
   .zine-content {
-    padding-top: 102px;
+    padding-top: 100px;
   }
 
   /* Zine Nav */
   .zine-controls {
     display: none;
   }
-  
+
   .zine-nav {
     height: 54px;
     line-height: 1em;
