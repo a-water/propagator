@@ -19,16 +19,14 @@
   font-weight: 400;
 }
 
-.zine-cover,
 .zine-toc-container {
-  width: 50%;
+  width: 100%;
   display: inline-block;
   height: 100%;
   vertical-align: top;
 }
 
 .zine-toc-container {
-  float: right;
 	display: flex;
 	justify-content: center;
   align-items: center;
