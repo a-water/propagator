@@ -3,13 +3,14 @@ import { Link } from 'react-router-dom';
 
 class ZineControls extends Component {
   render() {
+    console.log(this.props.isNextDisabled);
     return (
       <div className={ this.props.className }>
         <Link className={ this.props.isPrevDisabled ? "zine-ctrl-link disabled" : 'zine-ctrl-link' } to={ this.props.linkToPrev }>
           <div
             disabled={ this.props.isPrevDisabled }
             id="prev-btn"
-            className="zine-controls-btn"
+            className={ this.props.isPrevDisabled ? "zine-controls-btn zine-controls-btn-disabled" : "zine-controls-btn"}
           >
             { 
               this.props.className === 'zine-controls-bottom' ? 
@@ -30,8 +31,7 @@ class ZineControls extends Component {
             <div
               disabled={ this.props.isNextDisabled }
               id="next-btn"
-              
-              className="zine-controls-btn"
+              className={ this.props.isNextDisabled ? "zine-controls-btn zine-controls-btn-disabled" : "zine-controls-btn"}
             >
             { 
               this.props.className === 'zine-controls-bottom' ? 

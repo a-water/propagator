@@ -59,6 +59,10 @@
     background: white;
   }
 
+  .zine-controls-btn-disabled {
+    background: #545eff;
+  }
+
   .zine-controls-btn:hover {
     background: white;
   }
