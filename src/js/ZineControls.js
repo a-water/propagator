@@ -6,7 +6,7 @@ class ZineControls extends Component {
     console.log(this.props.isNextDisabled);
     return (
       <div className={ this.props.className }>
-        <Link className={ this.props.isPrevDisabled ? "zine-ctrl-link disabled" : 'zine-ctrl-link' } to={ this.props.linkToPrev }>
+        <Link className={ this.props.isPrevDisabled ? "zine-ctrl-link disabled" : 'zine-ctrl-link' } to={ this.props.isPrevDisabled ? "#" : this.props.linkToPrev }>
           <div
             disabled={ this.props.isPrevDisabled }
             id="prev-btn"
@@ -27,7 +27,7 @@ class ZineControls extends Component {
             { (this.props.currentPageNum) + "/" + (this.props.maxPagesNum) }
           </span>
 
-          <Link className={ this.props.isNextDisabled ? "zine-ctrl-link disabled" : 'zine-ctrl-link' } to={ this.props.linkToNext }>
+          <Link disabled={ this.props.isNextDisabled } className={ this.props.isNextDisabled ? "zine-ctrl-link disabled" : 'zine-ctrl-link' } to={ this.props.isNextDisabled ? "#" : this.props.linkToNext }>
             <div
               disabled={ this.props.isNextDisabled }
               id="next-btn"
