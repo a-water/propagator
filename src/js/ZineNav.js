@@ -38,15 +38,15 @@ class ZineNav extends Component {
           </div>
           
           <ZineControls
-            className= "zine-controls"
-            linkToPrev= {`/issue-01/${ this.props.previousSubmissionTitle.replace(/ /g, "_") }`}
-            linkToNext= {`/issue-01/${ this.props.nextSubmissionTitle.replace(/ /g, "_") }`}
-            isPrevDisabled= { this.props.currentPage === 0 }
-            isNextDisabled= { this.props.currentPage === this.props.numPages }
-            onClickPrev= { this.props.handleDecrementPage }
-            onClickNext= { this.props.handleIncrementPage }
-            currentPageNum= { this.props.currentPage + 1 }
-            maxPagesNum= { this.props.numPages + 1 }
+            className="zine-controls"
+            linkToPrev={`/issue-01/${ this.props.previousSubmissionTitle.replace(/ /g, "_") }`}
+            linkToNext={`/issue-01/${ this.props.nextSubmissionTitle.replace(/ /g, "_") }`}
+            isPrevDisabled={ this.props.currentPage === 0 }
+            isNextDisabled={ this.props.currentPage === this.props.numPages }
+            onClickPrev={ this.props.handleDecrementPage }
+            onClickNext={ this.props.handleIncrementPage }
+            currentPageNum={ this.props.currentPage + 1 }
+            maxPagesNum={ this.props.numPages + 1 }
           />
         </div>
       </div>

@@ -233,7 +233,7 @@ module.exports = {
           "template": {
             "style": "split",
             "contentType":"textImg",
-            "img": "primary.png",
+            "img": "primary.jpg",
             "text": "I was given a dead fish by strangers, and made to feel quite personally guilty about it’s lifeless state. Within the context of this guilt I was persuaded to hurry up and get it into the building over there. I panicked and hurried my way, stressed as can be, into an unknown government-style building. When I realized, upon entry, that there was no purpose for me here, I turned around to leave. The only exit was through a gateway-barrier resembling that of an airport security clearance point. I would be required, if I were to exit, to give my genetic information in a variety of forms. I was trapped. This is a true terror. I yell out a long, drawn out, “No!”"
           }
         },

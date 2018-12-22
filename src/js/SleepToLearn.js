@@ -19,7 +19,7 @@ class SleepToLearn extends Component {
       <div className="sleep-container">
         <article>
           <h1 className="display-1 row justify-content-center">Sleep to Learn</h1>
-          <h2 className="row justify-content-center">by i❤️computers</h2>
+          <h2 className="row justify-content-center">by i<span role="img" aria-labelledby="emoji">❤️</span>computers</h2>
           <div className="row justify-content-center">
             <div className="col-md-9 col-sm-12 essay round-top">
               <p>I had this dream where my friend Paul had a family deed to a house. Well not the whole house, but a subsection of a house. Another family owned the building and we passed by them while they were eating dinner in the kitchen. They didn’t notice us as we waltzed our way into Paul’s subsection, which was just a living room complete with a bed, a TV, and his musical instruments.</p>

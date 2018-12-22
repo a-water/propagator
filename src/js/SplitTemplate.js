@@ -45,7 +45,6 @@ class SplitTemplate extends Component {
 
   // ------------------------------------------------------
   renderLeft(type, data) {
-    // console.log('[ renderLeft ] data:', data);
     // text on the left
     let title;
     if (this.props.isPrimary) {
@@ -78,7 +77,6 @@ class SplitTemplate extends Component {
 
   // ------------------------------------------------------
   renderRight(type, data) {
-    // console.log('[ renderRight ] data:', data);
     // text on the right
     let title;
     if (this.props.isPrimary) {
