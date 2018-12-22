@@ -8,7 +8,6 @@ class TOC extends Component {
   render() {
     return (
       <div className="zine-toc">
-        <div className="zine-cover"></div>
         <div className="zine-toc-container">
           <ul>
             { 
