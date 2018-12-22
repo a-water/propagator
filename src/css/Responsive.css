@@ -102,5 +102,21 @@
   .full-template-inner.text {
     max-width: 100%;
   }
+
+  /* Sleep To Learn */
+  #sleep-to-learn h1 {
+    font-size: 26px;
+  }
+
+  #sleep-to-learn h2 {
+    font-size: 18px;
+  }
+
+  #sleep-to-learn p {
+    font-size: 0.8em;
+  }
+
+  #sleep-to-learn .essay {
+    padding: 5px;
+  }
 }
-  
