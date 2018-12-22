@@ -1,6 +1,7 @@
 @import url('https://fonts.googleapis.com/css?family=Roboto+Mono:300i,400,400i,700i');
 
 /* COMPONENT CSS */
+@import './Landing.css';
 @import './NavBar.css';
 @import './ZineNav.css';
 @import './TOC.css';
