@@ -50,16 +50,12 @@ class FullTemplate extends Component {
 
       case 'img':
         return (
-          <div
-            className={ this.state.contentTypeMap.get(this.props.data.contentType) }
-            >
-              <img
-                className="img-full" 
-                alt="subImgFull"
-                src={ require(`../assets/${ this.props.assetDir }/${ this.props.data[this.props.data.contentType] }`) } 
-              />
-            </div>
-          );
+          <img
+            className="img-full" 
+            alt="subImgFull"
+            src={ require(`../assets/${ this.props.assetDir }/${ this.props.data[this.props.data.contentType] }`) } 
+          />
+        );
 
       default:
         console.log('[renderMedia] contentType not recognized: ', contentType);
