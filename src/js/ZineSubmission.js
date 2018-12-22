@@ -92,7 +92,7 @@ class ZineSubmission extends Component {
         </div>
       );
     } else {
-      console.log('[renderSecondary] style: ', secondaryTemplate.style);
+      // console.log('[renderSecondary] style: ', secondaryTemplate.style);
     }
   }
 

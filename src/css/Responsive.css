@@ -16,19 +16,48 @@
 
   /* Zine Nav */
   .zine-nav {
-    height: 54px;
+    display: none;
+  }
+ 
+  .zine-controls-bottom {
+    display: block;
+    bottom: 0;
+    width: 100%;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    background: #2d00ff;
+    position: fixed;
   }
 
-  .contributor-meta {
-    line-height: 1em;
+  .disabled {
+    pointer-events: none;
   }
 
-  .contributor-name {
-    font-size: 0.7em;
+  .zine-controls-btn {
+    border: 0;
   }
   
-  .contributor-creds {
-    font-size: 0.5em;
+  .zine-controls-btn:hover {
+    background: #2d00ff;
+    color: white;
+  }
+
+  .zine-controls-btn:disabled {
+    cursor: default;
+    background: #2d00ff;
+    color: white;
+    border: 0;
+  }
+
+  #nav-btn-img {
+    height: 30px;
+    width: 30px;
+  }
+
+  .page-indicator-label {
+    color: white;
   }
 
   /* SplitTemplates */
