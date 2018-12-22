@@ -5,14 +5,19 @@ class SleepToLearn extends Component {
   renderBackgroundVid() {
     return (
       <div className="fullscreen-bg">
-        <video 
+        <img
+          className="fullscreen-bg__video"
+          alt="subImg"
+          src={ require(`../assets/sleep-to-learn/media/sparkle stairs still.jpg`) } />
+
+        {/* <video 
           loop muted autoPlay 
           poster={ require(`../assets/sleep-to-learn/media/sparkle stairs still.jpg`) } className="fullscreen-bg__video">
           <source 
             src={ require(`../assets/sleep-to-learn/media/sparkle stairs.mp4`) } 
             type="video/mp4" 
           />
-        </video>
+        </video> */}
       </div>
     )
   }

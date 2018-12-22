@@ -232,7 +232,7 @@ module.exports = {
         "primary": {
           "template": {
             "style": "split",
-            "contentType":"imgText",
+            "contentType":"textImg",
             "img": "primary.png",
             "text": "I was given a dead fish by strangers, and made to feel quite personally guilty about it’s lifeless state. Within the context of this guilt I was persuaded to hurry up and get it into the building over there. I panicked and hurried my way, stressed as can be, into an unknown government-style building. When I realized, upon entry, that there was no purpose for me here, I turned around to leave. The only exit was through a gateway-barrier resembling that of an airport security clearance point. I would be required, if I were to exit, to give my genetic information in a variety of forms. I was trapped. This is a true terror. I yell out a long, drawn out, “No!”"
           }
@@ -281,7 +281,7 @@ module.exports = {
             "style": "split",
             "contentType":"textText",
             "text":"This piece is an attempt at realistically depicting a view I saw in one of my dreams. I’d been recently thinking about catching up with a friend, and after a few days of thinking about it, I dreamt about it.<br/><br/>While it doesn't capture the immensity of the cloudscape I saw, I'm happy to leave that to the viewer's imagination.",
-            "textRight":"We were having a conversation over a video call, and she told me that she was hiking while talking. I asked her to point the camera at what she was looking at, and she pointed the camera towards what you see in the piece.<br/><br/>Three large glowing ridges on a vertical blanket of clouds, with a silhouette of trees in the foreground in the middle of a lake."
+            "textRight":"<b>We were having a conversation over a video call, and she told me that she was hiking while talking. I asked her to point the camera at what she was looking at, and she pointed the camera towards what you see in the piece.<br/><br/>Three large glowing ridges on a vertical blanket of clouds, with a silhouette of trees in the foreground in the middle of a lake.</b>"
           }
         },
 
