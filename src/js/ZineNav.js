@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import { Link } from 'react-router-dom';
+import ZineControls from './ZineControls';
 
 // ------------------------------------------------------
 // A navigation component for a zine, includes controls
@@ -38,28 +39,17 @@ class ZineNav extends Component {
             </span>
           </div>
           
-          <div className="zine-controls">
-            <Link to={`/issue-01/${ this.props.previousSubmissionTitle.replace(/ /g, "_") }`}>
-              <button
-                disabled={ this.props.currentPage === 0 }
-                id="prev-btn"
-                className="zine-controls-btn"
-                onClick={ this.props.handleDecrementPage }
-              >PREV</button>
-            </Link>
-
-            <span className="page-indicator-label">{ (this.props.currentPage + 1) + "/" + (this.props.numPages + 1) }</span>
-
-            <Link to={`/issue-01/${ this.props.nextSubmissionTitle.replace(/ /g, "_") }`}>
-              <button
-                disabled={ this.props.currentPage === this.props.numPages }
-                id="next-btn"
-                className="zine-controls-btn"
-                onClick={ this.props.handleIncrementPage }
-              >NEXT</button>
-            </Link>
-            
-          </div>
+          <ZineControls
+            className= "zine-controls"
+            linkToPrev= {`/issue-01/${ this.props.previousSubmissionTitle.replace(/ /g, "_") }`}
+            linkToNext= {`/issue-01/${ this.props.nextSubmissionTitle.replace(/ /g, "_") }`}
+            isPrevDisabled= { this.props.currentPage === 0 }
+            isNextDisabled= { this.props.currentPage === this.props.numPages }
+            onClickPrev= { this.props.handleDecrementPage }
+            onClickNext= { this.props.handleIncrementPage }
+            currentPageNum= { this.props.currentPage + 1 }
+            maxPagesNum= { this.props.numPages + 1 }
+          />
         </div>
       </div>
     );

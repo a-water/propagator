@@ -3,6 +3,7 @@ import NavBar from './NavBar';
 import ZineNav from './ZineNav';
 import TOC from './TOC';
 import ZineSubmission from './ZineSubmission';
+import ZineControls from './ZineControls';
 
 // ------------------------------------------------------
 // A zine component. Data for each zine is passed from
@@ -123,6 +124,17 @@ class Zine extends Component {
             <ZineSubmission sub={ this.props.zineData["submissions"][this.state.currentSubmission] } />
           }
         </div>
+        <ZineControls
+            className= "zine-controls-bottom"
+            linkToPrev= {`/issue-01/${ this.state.previousSubmissionTitle.replace(/ /g, "_") }`}
+            linkToNext= {`/issue-01/${ this.state.nextSubmissionTitle.replace(/ /g, "_") }`}
+            isPrevDisabled= { this.state.currentPage === 0 }
+            isNextDisabled= { this.state.currentPage === this.numPages }
+            onClickPrev= { this.incrementPage.bind(this) }
+            onClickNext= { this.decrementPage.bind(this) }
+            currentPageNum= { this.state.currentPage + 1 }
+            maxPagesNum= { this.numPages + 1 }
+        />
       </div>
     );
   }

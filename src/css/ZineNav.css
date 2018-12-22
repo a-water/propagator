@@ -61,3 +61,7 @@
 .page-indicator-label {
   font-size: 0.8em;
 }
+
+.zine-controls-bottom {
+  display: none;
+}
