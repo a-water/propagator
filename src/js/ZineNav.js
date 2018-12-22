@@ -14,7 +14,6 @@ class ZineNav extends Component {
     e.preventDefault();
     if (e.keyCode === 39) {
       // right arrow
-      console.log(this);
       this.props.handleIncrementPage();
     } 
     

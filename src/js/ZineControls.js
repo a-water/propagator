@@ -3,7 +3,6 @@ import { Link } from 'react-router-dom';
 
 class ZineControls extends Component {
   render() {
-    console.log(this.props.isNextDisabled);
     return (
       <div className={ this.props.className }>
         <Link className={ this.props.isPrevDisabled ? "zine-ctrl-link disabled" : 'zine-ctrl-link' } to={ this.props.isPrevDisabled ? "#" : this.props.linkToPrev }>

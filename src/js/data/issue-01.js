@@ -328,7 +328,7 @@ module.exports = {
           "secondTemplate":{
             "style":"split",
             "contentType":"imgText",
-            "img":"secondPrimary.png",
+            "img":"secondPrimary.jpg",
             "text":"This piece is a web article with surreal pictures. In it, I describe my dreams and intertwine the article with explanations about how dreams contribute to learning and why we experience them.<br/><br/>With my photographs, I try to place drawing within real-world settings in order to capture the memory/concept-mashing nature of dreams.<br/><br/>The web article also has a cinemagraph background. Our neighbors had a party and got confetti all over our apartment. I found this scenery surreal and relevant to my piece; an ambient backdrop that invokes the feeling of color and randomness strewn upon a grey and monotonous foundation. I’d like to think our dreams are that fluttery surreal color that sprinkle into our dull lives."
           }
         },
