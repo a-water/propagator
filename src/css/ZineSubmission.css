@@ -38,13 +38,12 @@
 }
 
 .double-text-left {
-  background: #d8d8d8;
+  background: #f4f4f4;
 }
 
 .double-text-right {
-  background: #adabab;
+  background: #efefef;
 }
-
 
 .text .submission-title {
   font-size: 22px;
@@ -138,10 +137,9 @@ iframe {
 
 /* quote */
 .zine-quote {
-  padding: 24px 0px;
+  padding: 8px 0px;
   width: 100%;
-  /* height: 80px; */
-  background-color: #ececec;
+  background-color: #e8eaff;
   display: flex;
   align-items: center;
   justify-content: center;
