@@ -18,12 +18,12 @@ class SplitTemplate extends Component {
       // img left, text right
       case 'imgText':
         this.left = this.renderLeft('img', data.img);
-        this.right = this.renderRight('text', data.text);
+        this.right = this.renderRight('text', data);
         break;
 
       // text left, img right
       case 'textImg':
-        this.left = this.renderLeft('text', data.text);
+        this.left = this.renderLeft('text', data);
         this.right = this.renderRight('img', data.img);
         break;
       
@@ -90,7 +90,7 @@ class SplitTemplate extends Component {
         <div className= {data.isDoubleText ? "split-right text-right double-text-right" : "split-right text-right"}>
           <div className="text">
             { title }
-            <p dangerouslySetInnerHTML={ this.renderInnerHtml(data.textRight) }></p>
+            <p dangerouslySetInnerHTML={ this.renderInnerHtml(data.isDoubleText ? data.textRight : data.text) }></p>
           </div>
         </div>
       )
