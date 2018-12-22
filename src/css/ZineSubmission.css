@@ -37,6 +37,15 @@
   align-self: center;
 }
 
+.double-text-left {
+  background: #d8d8d8;
+}
+
+.double-text-right {
+  background: #adabab;
+}
+
+
 .text .submission-title {
   font-size: 22px;
   font-weight: 400;

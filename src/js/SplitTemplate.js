@@ -30,8 +30,10 @@ class SplitTemplate extends Component {
       // text left, text right
       case 'textText':
         // one of the data.text should be data.textRight
-        this.left = this.renderLeft('text', data.text);
-        this.right = this.renderRight('text', data.textRight);
+        data.isDoubleText = true;
+        this.left = this.renderLeft('text', data);
+        this.right = this.renderRight('text', data);
+        data.isDoubleText = false;
         break;
         
       // we shouldn't be here
@@ -52,10 +54,10 @@ class SplitTemplate extends Component {
     
     if (type === 'text') {
       return (
-        <div className="split-left">
+        <div className= {data.isDoubleText ? "split-left double-text-left" : "split-left" }>
           <div className="text">
             { title }
-            <p dangerouslySetInnerHTML={ this.renderInnerHtml(data) }></p>
+            <p dangerouslySetInnerHTML={ this.renderInnerHtml(data.text) }></p>
           </div>
         </div>
       );
@@ -85,10 +87,10 @@ class SplitTemplate extends Component {
 
     if (type === 'text') {
       return (
-        <div className="split-right text-right">
+        <div className= {data.isDoubleText ? "split-right text-right double-text-right" : "split-right text-right"}>
           <div className="text">
             { title }
-            <p dangerouslySetInnerHTML={ this.renderInnerHtml(data) }></p>
+            <p dangerouslySetInnerHTML={ this.renderInnerHtml(data.textRight) }></p>
           </div>
         </div>
       )
