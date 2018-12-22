@@ -15,8 +15,21 @@
   }
 
   /* Zine Nav */
-  .zine-nav {
+  .zine-controls {
     display: none;
+  }
+  
+  .zine-nav {
+    height: 54px;
+    line-height: 1em;
+  }
+
+  .contributor-name {
+    font-size: 0.8em;
+  }
+  
+  .contributor-creds {
+    font-size: 0.6em;
   }
  
   .zine-controls-bottom {

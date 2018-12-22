@@ -31,11 +31,12 @@ class Zine extends Component {
     if (props.match) {
       let { currentSubmissionTitle } = props.match.match.params;
       currentSubmissionTitle = currentSubmissionTitle.replace(/_/g, " ");
+
       if (currentSubmissionTitle) {
         for (let i=0; i<submissions.length; i++) {
           if (submissions[i].submissionTitle === currentSubmissionTitle) {
-            this.state.currentSubmission = i;
-            this.state.currentPage = i + 1;
+            this.state.currentSubmission      = i;
+            this.state.currentPage            = i + 1;
             this.state.currentSubmissionTitle = currentSubmissionTitle;
             
             if (i === 0) {
@@ -50,28 +51,6 @@ class Zine extends Component {
           }
         }
       }
-    }
-  }
-
-  // ------------------------------------------------------
-  incrementPage() {
-    // can't increment after submissions are done
-    if (this.state.currentPage < this.numPages) {
-      this.setState({
-        currentSubmission: this.state.currentSubmission + 1,
-        currentPage : this.state.currentPage + 1
-      });
-    }
-  }
-
-  // ------------------------------------------------------
-  decrementPage() {
-    // can't decrement from TOC
-    if (this.state.currentPage >= 1) {
-      this.setState({
-        currentSubmission: this.state.currentSubmission - 1,
-        currentPage: this.state.currentPage - 1
-      });
     }
   }
 
@@ -108,14 +87,12 @@ class Zine extends Component {
             this.state.currentPage === 0 ? "" :
             this.props.zineData["submissions"][this.state.currentSubmission].creds 
           }
-          currentSubmissionTitle= { this.state.currentSubmissionTitle }
-          previousSubmissionTitle= { this.state.previousSubmissionTitle }
-          nextSubmissionTitle= { this.state.nextSubmissionTitle }
+          currentSubmissionTitle={ this.state.currentSubmissionTitle }
+          previousSubmissionTitle={ this.state.previousSubmissionTitle }
+          nextSubmissionTitle={ this.state.nextSubmissionTitle }
           currentPage={ this.state.currentPage }
           numPages={ this.numPages }
           showPrevBtn={ this.state.currentPage > 0 }
-          handleIncrementPage={ this.incrementPage.bind(this) }
-          handleDecrementPage={ this.decrementPage.bind(this) }
         />
         <div className="zine-content">
           {
@@ -125,15 +102,13 @@ class Zine extends Component {
           }
         </div>
         <ZineControls
-            className= "zine-controls-bottom"
-            linkToPrev= {`/issue-01/${ this.state.previousSubmissionTitle.replace(/ /g, "_") }`}
-            linkToNext= {`/issue-01/${ this.state.nextSubmissionTitle.replace(/ /g, "_") }`}
-            isPrevDisabled= { this.state.currentPage === 0 }
-            isNextDisabled= { this.state.currentPage === this.numPages }
-            onClickPrev= { this.incrementPage.bind(this) }
-            onClickNext= { this.decrementPage.bind(this) }
-            currentPageNum= { this.state.currentPage + 1 }
-            maxPagesNum= { this.numPages + 1 }
+          className="zine-controls-bottom"
+          linkToPrev={`/issue-01/${ this.state.previousSubmissionTitle.replace(/ /g, "_") }`}
+          linkToNext={`/issue-01/${ this.state.nextSubmissionTitle.replace(/ /g, "_") }`}
+          isPrevDisabled={ this.state.currentPage === 0 }
+          isNextDisabled={ this.state.currentPage === this.numPages }
+          currentPageNum={ this.state.currentPage + 1 }
+          maxPagesNum={ this.numPages + 1 }
         />
       </div>
     );
