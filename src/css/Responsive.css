@@ -111,14 +111,14 @@
 
   .split-template .split-left .text,
   .split-template .split-right .text {
-    margin-top: 40px;
-    margin-bottom: 40px;
+    margin-top: 56px;
+    margin-bottom: 56px;
     max-width: 80%;
   }
   
   /* FullTemplate */
   .full-template-inner {
-    padding: 60px 0px;
+    padding: 56px 0px;
   }
 
   .full-template-inner.text {

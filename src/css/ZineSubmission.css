@@ -31,8 +31,8 @@
 
 .split-template .split-left .text,
 .split-template .split-right .text {
-  margin-top: 40px;
-  margin-bottom: 40px;
+  margin-top: 56px;
+  margin-bottom: 56px;
   max-width: 70%;
   align-self: center;
 }
@@ -46,7 +46,7 @@
 }
 
 .text .submission-title {
-  font-size: 22px;
+  font-size: 20px;
   font-weight: 400;
   letter-spacing: -0.2pt;
 }
@@ -56,7 +56,11 @@
   font-weight: 300;
   font-size: 0.8em;
   line-height: 20px;
-  margin: 22px 0px;
+  /* margin: 22px 0px; */
+}
+
+.submission-title {
+  font-style: normal;
 }
 
 .split-right.text-right {
@@ -111,11 +115,11 @@
 }
 
 .full-template-inner .submission-title-container {
-  margin-bottom: 28px;
+  margin-bottom: 24px;
   text-align: center;
   font-weight: 400;
   font-style: italic;
-  font-size: 24px;
+  font-size: 20px;
 }
 
 /* https://blog.theodo.fr/2018/01/responsive-iframes-css-trick/ */

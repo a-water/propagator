@@ -67,18 +67,18 @@ module.exports = {
         "primary": {
           "template": {
             "style":"split",
-            "contentType": "textImg",
+            "contentType": "imgText",
             "img": "primary.png",
-            "text": "This year I explored new territories, embraced new experiences and in a way started connecting the dots dating way back to my teenage self. Also for about half the time I was very, very stressed out. At the end of it I notice how I see myself as a somewhat different person but still left with lots of unknown parts to figure out. I may be hiding those parts unconsciously but my dreams surfaced them more than anything."
+            "text": "This year I explored new territories, embraced new experiences and in a way started connecting the dots dating way back to my teenage self. Also for about half the time I was very, very stressed out. At the end of it I notice how <b>I see myself as a somewhat different person but still left with lots of unknown parts to figure out.</b> I may be hiding those parts unconsciously but my dreams surfaced them more than anything."
           }
         },
 
-        "quote": "I'm still not quite ready to speak of it.",
+        "quote": "I'm still not ready to speak of it.",
 
         "secondary": {
           "template": {
             "style":"split",
-            "contentType":"imgText",
+            "contentType":"textImg",
             "img":"secondary.png",
             "text": "Throughout the month, I realized that half of my dreams are anxiety dreams, and the rest of them have something to do with my deepest thoughts that I am not speaking of in my day-to-day life. And that’s why I had to really obfuscate images of my dream journal because I am still not ready to speak of it."
           }
@@ -294,8 +294,8 @@ module.exports = {
             "img":"secondary.png",
             "text":"I am not new to dream journaling. In the past I used it primarily to enhance dream recall in an effort to have more lucid dreams. I was not as successful as I wanted to be and slowly lost the habit, but upon hearing about this project, my interest was sparked again. Amazingly, I learned I still visually remember some dreams from more than a decade ago!"
           }
-          
         },
+
         "tertiary": {
           "template": {
             "style":"full",
@@ -343,10 +343,73 @@ module.exports = {
           }
         }
       } 
-    }
+    },
     
     // ------------------------------------------------------
-    // 09. tbd by Ashwath Anand
+    // 09. Harness/Unleash by Arabella Bautista
     // ------------------------------------------------------
+    // {
+    //   "id": "",
+    //   "author": "Arabella Bautista",
+    //   "creds": "program developer, research designer, technologist",
+    //   "submissionTitle": "Harness + Unleash",
+
+    //   "content": {
+    //     "title": "Harness + Unleash (FORTHCOMING)",
+    //     "assetDir": "harness-unleash",
+
+    //     "primary": {
+    //       "template": {
+    //         "style": "split",
+    //         "contentType":"tbd",
+    //       },
+    //     },
+
+    //     "secondary": {
+    //       "template": {
+    //         "style":"split",
+    //         "contentType":"textText",
+    //         "text":"tbd",
+    //         "textRight":"tbd"
+    //       }
+    //     },
+
+    //     "quote": "tbd"
+    //   } 
+    // },
+
+    // ------------------------------------------------------
+    // 09. TBD by Ashwath Anand
+    // ------------------------------------------------------
+    // {
+    //   "id": "",
+    //   "author": "Ashwath Anand",
+    //   "creds": "creative technologist & artist",
+    //   "submissionTitle": "TBD",
+
+    //   "content": {
+    //     "title": "TBD",
+    //     "assetDir": "TBD",
+
+    //     "primary": {
+    //       "template": {
+    //         "style": "split",
+    //         "contentType":"tbd",
+    //       },
+    //     },
+
+    //     "secondary": {
+    //       "template": {
+    //         "style":"split",
+    //         "contentType":"textText",
+    //         "text":"tbd",
+    //         "textRight":"tbd"
+    //       }
+    //     },
+
+    //     "quote": "tbd"
+    //   } 
+    // }
+
   ]
 };
