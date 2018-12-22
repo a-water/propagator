@@ -8,9 +8,11 @@ class Landing extends Component {
         <div>
           <h2>PROPAGATOR.</h2>
         </div>
-        <div className="issue-card">
-          <Link to="/issue-01">ISSUE 01: DREAM MACHINE</Link>
-        </div>
+        <Link to="/issue-01">
+          <div className="issue-card">
+            ISSUE 01: DREAM MACHINE
+          </div>
+        </Link>
       </div>
     );
   }
