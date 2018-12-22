@@ -17,7 +17,7 @@
   .zine-submission {
     padding-bottom: 50px;
   }
-  
+
   /* Zine Nav */
   .zine-controls {
     display: none;
@@ -54,13 +54,31 @@
 
   .zine-controls-btn {
     border: 0;
-  }
-  
-  .zine-controls-btn:hover {
-    background: #2d00ff;
-    color: white;
+    width: 38px;
+    height: 38px;
+    background: white;
   }
 
+  .zine-controls-btn:hover {
+    background: white;
+  }
+
+  a.zine-ctrl-link {
+    max-height: 38px;
+  }
+
+  .zine-controls-icon {
+    width: 11px;
+  }
+
+  .zine-controls-icon.icon-left {
+    margin-right: 2px;
+  }
+  
+  .zine-controls-icon.icon-right {
+    margin-left: 2px;
+  }
+  
   .zine-controls-btn:disabled {
     cursor: default;
     background: #2d00ff;
@@ -117,6 +135,8 @@
   }
 
   #sleep-to-learn .essay {
-    padding: 5px;
+    padding: 16px;
+    margin-left: 8%;
+	  margin-right: 8%;
   }
 }
