@@ -58,7 +58,7 @@ class SplitTemplate extends Component {
             <div className="submission-title-container">
               { title }
               {
-                this.props.extProjectUrl !== "" ?
+                this.props.extProjectUrl !== "" && this.props.isPrimary ?
                 <a className="ext-proj-url" href={ this.props.extProjectUrl } rel="noopener noreferrer" target="_blank">website</a> : null
               }
             </div>
