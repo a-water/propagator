@@ -32,7 +32,7 @@ class ZineNav extends Component {
             <span className="contributor-name">
               { this.props.author }
               {this.props.portfolioUrl ? 
-                <a href={this.props.portfolioUrl} >
+                <a href={this.props.portfolioUrl} target="_blank">
                   <div className="zine-nav-link">
                     <img
                       id="zine-link-img"
