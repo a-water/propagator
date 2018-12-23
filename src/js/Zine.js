@@ -21,6 +21,7 @@ class Zine extends Component {
     this.TOC = this.generateTOC();
 
     this.state = {
+      submissions,
       currentSubmission: -1,
       currentPage: 0,
       currentSubmissionTitle: "",
@@ -81,11 +82,14 @@ class Zine extends Component {
         <ZineNav
           author={ 
             this.state.currentPage === 0 ? "TABLE OF CONTENTS" : 
-            this.props.zineData["submissions"][this.state.currentSubmission].author 
+            this.state.submissions[this.state.currentSubmission].author 
           }
           creds={ 
             this.state.currentPage === 0 ? "" :
-            this.props.zineData["submissions"][this.state.currentSubmission].creds 
+            this.state.submissions[this.state.currentSubmission].creds 
+          }
+          portfolioUrl = { this.state.currentPage === 0 ? null :
+            this.state.submissions[this.state.currentSubmission].portfolioUrl
           }
           currentSubmissionTitle={ this.state.currentSubmissionTitle }
           previousSubmissionTitle={ this.state.previousSubmissionTitle }
@@ -97,8 +101,8 @@ class Zine extends Component {
         <div className="zine-content">
           {
             this.state.currentPage === 0 ?
-            <TOC submissions={ this.props.zineData["submissions"] } /> : 
-            <ZineSubmission sub={ this.props.zineData["submissions"][this.state.currentSubmission] } />
+            <TOC submissions={ this.state.submissions } /> : 
+            <ZineSubmission sub={ this.state.submissions[this.state.currentSubmission] } />
           }
         </div>
         <ZineControls
