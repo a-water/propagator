@@ -101,7 +101,7 @@ class ZineSubmission extends Component {
     let tertiaryTemplate = data.tertiary.template;
     if (tertiaryTemplate.style === 'full') {
       return (
-        <div className="zine-section">
+        <div className="zine-section tertiary-full">
           <FullTemplate
             assetDir={ data.assetDir }
             isPrimary= { false }
