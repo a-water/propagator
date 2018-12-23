@@ -25,6 +25,7 @@ module.exports = {
       "author": "Ann Chen",
       "creds": "Illustrator",
       "submissionTitle": "countrtop mayonnaise",
+      "portfolioUrl": "https://www.instagram.com/hickorypants",
 
       "content": {
         "title": "countrtop mayonnaise",
@@ -60,6 +61,7 @@ module.exports = {
       "author": "Lynn Hu",
       "creds": "designer & artist",
       "submissionTitle": "Piecing Together",
+      "portfolioUrl": "https://www.lynnhu.com/",
 
       "content": {
         "title": "piecing together",
@@ -94,6 +96,7 @@ module.exports = {
       "author": "James Proctor",
       "creds": "data visualization engineer & new media artist",
       "submissionTitle": "Dream Locations",
+      "portfolioUrl": "http://www.jamesaproctor.com",
 
       "content": {
         "title": "Dream Locations",
@@ -137,6 +140,7 @@ module.exports = {
       "author": "Alex Chan",
       "creds": "architect, writer, & artist",
       "submissionTitle": "Ride",
+      "portfolioUrl": "https://www.alexandriachan.com",
 
       "content": {
         "title": "Ride",
@@ -176,6 +180,7 @@ module.exports = {
       "author": "odbol",
       "creds": "new media artist & cybertechnician",
       "submissionTitle": "odbol",
+      "portfolioUrl": "http://www.odbol.com",
 
       "content": {
         "title": "odbol",
@@ -224,6 +229,7 @@ module.exports = {
       "author": "Michaela Costello",
       "creds": "illustrator & graphic designer",
       "submissionTitle": "PSA no. 1",
+      "portfolioUrl": "https://www.instagram.com/dream_party_hotel",
 
       "content": {
         "title": "PSA no. 1",
@@ -266,6 +272,7 @@ module.exports = {
       "author": "Yousif Al-Yousifi",
       "creds": "new media artist & programmer",
       "submissionTitle": "Trees on a Lake",
+      "portfolioUrl": "https://www.instagram.com/yousifalyousifi_art",
 
       "content": {
         "title": "Trees on a Lake",
@@ -315,6 +322,7 @@ module.exports = {
       "author": "i❤️computers",
       "creds": "code diva",
       "submissionTitle": "Sleep to Learn",
+      "portfolioUrl": "https://www.ilovecomputers.org",
 
       "content": {
         "title": "Sleep to Learn",

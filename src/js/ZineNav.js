@@ -31,6 +31,19 @@ class ZineNav extends Component {
           <div className="contributor-meta">
             <span className="contributor-name">
               { this.props.author }
+              {this.props.portfolioUrl ? 
+                <a href={this.props.portfolioUrl} >
+                  <div className="zine-nav-link">
+                    <img
+                      id="zine-link-img"
+                      alt="Portfolio Link"
+                      src={ require(`../assets/link-icon.png`)}
+                    />
+                  </div>
+                </a>
+              :
+                null
+              }
             </span><br/>
             <span className="contributor-creds">
               { this.props.creds.toLowerCase() }
