@@ -49,7 +49,7 @@
   background: #efefef;
 }
 
-.text .submission-title {
+.submission-title {
   font-size: 20px;
   font-weight: 400;
   letter-spacing: -0.2pt;
@@ -60,7 +60,6 @@
   font-weight: 300;
   font-size: 0.8em;
   line-height: 20px;
-  /* margin: 22px 0px; */
 }
 
 .submission-title {
@@ -118,13 +117,31 @@
   max-width: 80%;
 }
 
+.submission-title-container {
+  display: flex;
+	justify-content: space-between;
+}
+
 .full-template-inner .submission-title-container {
-  margin-bottom: 24px;
-  text-align: center;
+  margin-bottom: 16px;
   font-weight: 400;
   font-style: italic;
-  font-size: 20px;
 }
+
+a.ext-proj-url {
+  margin-left: 16px;
+  font-size: 1.1em;
+	text-decoration: underline;
+	font-weight: 400;
+	color: blue;
+}
+
+/* a.ext-proj-url:after {
+  content: "";
+	bottom: -3px;
+	height: 1px;
+	width: 100%;
+} */
 
 /* https://blog.theodo.fr/2018/01/responsive-iframes-css-trick/ */
 .video-embed-container {
@@ -167,5 +184,3 @@ iframe {
   font-style: italic;
   font-weight: 300;
 }
-
-/* secondary */

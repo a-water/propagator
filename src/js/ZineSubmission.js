@@ -21,7 +21,8 @@ class ZineSubmission extends Component {
     if (primaryTemplate.style === 'split') {
       return (
         <div className="zine-section">
-          <SplitTemplate 
+          <SplitTemplate
+            extProjectUrl={ data.hasOwnProperty('extProjectUrl') ? data.extProjectUrl : "" } 
             subTitle={ data.title }
             assetDir={ data.assetDir }
             isPrimary={ true } 
@@ -33,6 +34,7 @@ class ZineSubmission extends Component {
       return (
         <div className="zine-section">
           <FullTemplate
+            extProjectUrl={ data.hasOwnProperty('extProjectUrl') ? data.extProjectUrl : "" } 
             assetDir={ data.assetDir }
             subTitle= { data.title }
             isPrimary= { true }

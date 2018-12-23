@@ -72,6 +72,10 @@ class FullTemplate extends Component {
             this.props.isPrimary && this.props.data.contentType !== 'custom-site'?
             <div className="submission-title-container">
               <span className="submission-title">{ this.props.subTitle }</span>
+              {
+                this.props.extProjectUrl !== "" ?
+                <a className="ext-proj-url" href={ this.props.extProjectUrl } target="_blank">website</a> : null
+              }
             </div> : null
           }
           { this.renderMedia(this.props.data.contentType) }

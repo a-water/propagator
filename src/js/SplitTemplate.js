@@ -55,7 +55,13 @@ class SplitTemplate extends Component {
       return (
         <div className= {data.isDoubleText ? "split-left double-text-left" : "split-left" }>
           <div className="text">
-            { title }
+            <div className="submission-title-container">
+              { title }
+              {
+                this.props.extProjectUrl !== "" ?
+                <a className="ext-proj-url" href={ this.props.extProjectUrl } target="_blank">website</a> : null
+              }
+            </div>
             <p dangerouslySetInnerHTML={ this.renderInnerHtml(data.text) }></p>
           </div>
         </div>

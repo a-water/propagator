@@ -97,8 +97,8 @@ module.exports = {
       "creds": "data visualization engineer & new media artist",
       "submissionTitle": "Dream Locations",
       "portfolioUrl": "http://www.jamesaproctor.com",
-
       "content": {
+        "extProjectUrl": "http://jamesaproctor.com/#/dreammachine",
         "title": "Dream Locations",
         "assetDir":"dream-locations",
         
@@ -185,7 +185,7 @@ module.exports = {
       "content": {
         "title": "odbol",
         "assetDir": "odbol",
-
+        "extProjectUrl": "http://www.odbol.com",
         "primary": {
           "template": {
             "style": "full",
