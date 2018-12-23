@@ -11,7 +11,7 @@
 }
 
 .tertiary-full {
-  background: #abab;
+  background:#fafafa;
 }
 
 /* SPLIT TEMPLATE */
@@ -157,6 +157,7 @@ iframe {
 .zine-quote-inner {
   width: 70%;
   text-align: center;
+  color: #2d00ff;
 }
 
 .zine-quote-inner p {
