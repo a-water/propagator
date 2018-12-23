@@ -59,7 +59,7 @@ class SplitTemplate extends Component {
               { title }
               {
                 this.props.extProjectUrl !== "" ?
-                <a className="ext-proj-url" href={ this.props.extProjectUrl } target="_blank">website</a> : null
+                <a className="ext-proj-url" href={ this.props.extProjectUrl } rel="noopener noreferrer" target="_blank">website</a> : null
               }
             </div>
             <p dangerouslySetInnerHTML={ this.renderInnerHtml(data.text) }></p>
