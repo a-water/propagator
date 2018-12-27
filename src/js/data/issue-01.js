@@ -391,7 +391,7 @@ module.exports = {
           "template": {
             "style":"full",
             "contentType":"text",
-            "text":"Dream journaling is something I have tried in the past in an attempt to get into lucid dreaming. I stopped a couple weeks into it because it was really messing up my sleep pattern.<br/<br/>I had a similar problem this time as well. I think the stress of having to remember my dream was bothering me too much. But I do like what I wrote down over a month and hope to make simple comics out of most of them."
+            "text":"Dream journaling is something I have tried in the past in an attempt to get into lucid dreaming. I stopped a couple weeks into it because it was really messing up my sleep pattern.<br/><br/>I had a similar problem this time as well. I think the stress of having to remember my dream was bothering me too much. But I do like what I wrote down over a month and hope to make simple comics out of most of them."
           }
         }
       } 

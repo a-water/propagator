@@ -17,14 +17,14 @@ class SplitTemplate extends Component {
     switch (data.contentType) {
       // img left, text right
       case 'imgText':
-        this.left = this.renderLeft('img', data.img);
+        this.left = this.renderLeft('img', data);
         this.right = this.renderRight('text', data);
         break;
 
       // text left, img right
       case 'textImg':
         this.left = this.renderLeft('text', data);
-        this.right = this.renderRight('img', data.img);
+        this.right = this.renderRight('img', data);
         break;
       
       // text left, text right
@@ -34,6 +34,14 @@ class SplitTemplate extends Component {
         this.left = this.renderLeft('text', data);
         this.right = this.renderRight('text', data);
         data.isDoubleText = false;
+        break;
+      
+      // img left, img right
+      case 'imgImg':
+        data.isDoubleImg = true;
+        this.left = this.renderLeft('img', data);
+        this.right = this.renderRight('img', data);
+        data.isDoubleImg = false;
         break;
         
       // we shouldn't be here
@@ -70,11 +78,22 @@ class SplitTemplate extends Component {
       
     // img on the left
     return (
-      <div className="split-left img">
+      <div className= {data.isDoubleImg ? "split-left img double-img" : "split-left img" }>
+        {data.isDoubleImg ? 
+          <div className="submission-title-container">
+                { title }
+                {
+                  this.props.extProjectUrl !== "" && this.props.isPrimary ?
+                  <a className="ext-proj-url" href={ this.props.extProjectUrl } rel="noopener noreferrer" target="_blank">website</a> : null
+                }
+          </div>
+        :
+          null
+        }
         <img
           className="img-left" 
           alt="subImg"
-          src={ require(`../assets/${ this.props.assetDir }/${ data }`) } 
+          src={ require(`../assets/${ this.props.assetDir }/${ data.img }`) } 
         />
       </div>
     );
@@ -101,12 +120,13 @@ class SplitTemplate extends Component {
     }
 
     // img on the right
+    // console.log(`../assets/${ this.props.assetDir }/${ data.isDoubleImg ? data.img : data.imgRight }`);
     return (
-      <div className="split-right">
+      <div className= {data.isDoubleImg ? "split-right double-img" : "split-right" }>
         <img 
           className="img-right"
           alt="subImg"
-          src={ require(`../assets/${ this.props.assetDir }/${ data }`) } 
+          src={ require(`../assets/${ this.props.assetDir }/${ data.isDoubleImg ? data.imgRight : data.img }`) } 
         />
       </div>
     )
