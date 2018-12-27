@@ -1,35 +1,56 @@
 .landing {
+  background: ghostwhite;
   display: flex;
-  align-items: center;
-  justify-content: center;
   height: 100%;
+  padding: 24px;
   flex-direction: column;
 }
 
+* {
+  box-sizing: border-box;
+}
+
+#landing-header {
+  display: flex;
+  align-items: center;
+}
+
+#landing-about {
+  margin-bottom: 24px;
+}
+
+#landing-title {
+  font-size: 1.4em;
+}
+
+#landing-description {
+  font-size: 1.0em;
+  font-weight: 300;
+}
+
 .issue-card {
+  background: url('../assets/landing.png');
+  object-fit: fill;
+  height: 100%;
+  zoom: 1.2;
+  max-height: 250px;
+  background-position: 0px -200px;
+	background-repeat: no-repeat;
   border: 3px solid #2d00ff;
-  background: white;
   padding: 32px;
   color: #2d00ff;
+  height: 300px;
 }
+
 
 .issue-card:hover {
   cursor: pointer;
-  background:#2d00ff;
-  color: white;
-}
-
-.issue-card:hover {
-  cursor: pointer;
-  background:#2d00ff;
+  /* background:#2d00ff; */
+  /* background:rgba(255, 255, 255, 0.2); */
 }
 
 .issue-card:hover a {
   color: white;
-}
-
-.landing h2 {
- padding-bottom: 32px;
 }
 
 .issue-card a {

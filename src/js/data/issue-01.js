@@ -352,6 +352,50 @@ module.exports = {
         }
       } 
     },
+
+    // ------------------------------------------------------
+    // 09. Meltdown by Ashwath Anand
+    // ------------------------------------------------------
+    {
+      "id": "",
+      "author": "Ashwath Anand",
+      "portfolioUrl": "https://tl-dr.io/",
+      "creds": "creative technologist & multimedia artist",
+      "submissionTitle": "Meltdown",
+
+      "content": {
+        "title": "Meltdown",
+        "assetDir": "meltdown",
+
+        "primary": {
+          "template": {
+            "style": "split",
+            "contentType":"imgImg",
+            "img":"primary.png",
+            "imgRight":"primaryRight.png"
+          },
+        },
+
+        "quote": "Branded as a project for “social good,” it is really a search for their next billion dollars.",
+
+        "secondary": {
+          "template": {
+            "style":"split",
+            "contentType":"imgText",
+            "img":"secondary.png",
+            "text":"I had this dream towards the end of my one month. I chose to illustrate this one because it felt very real.<br/><br/>Meltdown follows a tech giant launching an ambitious project in a volatile market. Branded as a project for “social good”, it is really a search for their next billion dollars and next zetabyte of data." 
+          }
+        },
+
+        "tertiary": {
+          "template": {
+            "style":"full",
+            "contentType":"text",
+            "text":"Dream journaling is something I have tried in the past in an attempt to get into lucid dreaming. I stopped a couple weeks into it because it was really messing up my sleep pattern.<br/<br/>I had a similar problem this time as well. I think the stress of having to remember my dream was bothering me too much. But I do like what I wrote down over a month and hope to make simple comics out of most of them."
+          }
+        }
+      } 
+    }
     
     // ------------------------------------------------------
     // 09. Harness/Unleash by Arabella Bautista
@@ -386,38 +430,7 @@ module.exports = {
     //   } 
     // },
 
-    // ------------------------------------------------------
-    // 09. TBD by Ashwath Anand
-    // ------------------------------------------------------
-    // {
-    //   "id": "",
-    //   "author": "Ashwath Anand",
-    //   "creds": "creative technologist & artist",
-    //   "submissionTitle": "TBD",
-
-    //   "content": {
-    //     "title": "TBD",
-    //     "assetDir": "TBD",
-
-    //     "primary": {
-    //       "template": {
-    //         "style": "split",
-    //         "contentType":"tbd",
-    //       },
-    //     },
-
-    //     "secondary": {
-    //       "template": {
-    //         "style":"split",
-    //         "contentType":"textText",
-    //         "text":"tbd",
-    //         "textRight":"tbd"
-    //       }
-    //     },
-
-    //     "quote": "tbd"
-    //   } 
-    // }
+    
 
   ]
 };
