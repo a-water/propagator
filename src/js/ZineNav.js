@@ -8,21 +8,6 @@ import ZineControls from './ZineControls';
 // page, submission author's name and other metadata. 
 // ------------------------------------------------------
 class ZineNav extends Component {
-
-  // ------------------------------------------------------
-  handleOnKeyDown(e) {
-    e.preventDefault();
-    if (e.keyCode === 39) {
-      // right arrow
-      this.props.handleIncrementPage();
-    } 
-    
-    if (e.keyCode === 37) {
-      // left arrow
-      this.props.handleDecrementPage();
-    }
-  }
-
   // ------------------------------------------------------
   render() {
     return (
