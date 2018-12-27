@@ -1,8 +1,48 @@
 import React, { Component } from 'react';
-import { Link } from 'react-router-dom';
+import { Link, Redirect } from 'react-router-dom';
 
 class ZineControls extends Component {
+
+  // ------------------------------------------------------
+  constructor(props) {
+    super(props);
+
+    this.state = {
+      navigateTo: null
+    }
+    // bind this once here so that it can be un-binded correctly in componentWillUnmount
+    this.handleOnKeyDown = this.handleOnKeyDown.bind(this);
+  }
+
+  // ------------------------------------------------------
+  handleOnKeyDown(e) {
+    if (e.keyCode === 37) {
+      e.preventDefault();
+      this.setState({ navigateTo: this.props.isPrevDisabled ? null : this.props.linkToPrev });
+    } else if (e.keyCode === 39) {
+      e.preventDefault();
+      this.setState({ navigateTo: this.props.isNextDisabled ? null : this.props.linkToNext });
+    }
+  }
+
+  // ------------------------------------------------------
+  componentDidMount() {
+    if (this.props.className !== "zine-controls-bottom") {
+      window.addEventListener('keydown', this.handleOnKeyDown);
+    }
+  }
+
+  // ------------------------------------------------------
+  componentWillUnmount() {
+    window.removeEventListener('keydown', this.handleOnKeyDown);
+  }
+
+  // ------------------------------------------------------
   render() {
+    if (this.state.navigateTo) {
+      return <Redirect to={ this.state.navigateTo } />
+    }
+
     return (
       <div className={ this.props.className }>
         <Link className={ this.props.isPrevDisabled ? "zine-ctrl-link disabled" : 'zine-ctrl-link' } to={ this.props.isPrevDisabled ? "#" : this.props.linkToPrev }>
