@@ -185,7 +185,7 @@ module.exports = {
       "content": {
         "title": "odbol",
         "assetDir": "odbol",
-        "extProjectUrl": "http://www.odbol.com",
+        "extProjectUrl": "http://www.odbol.com/dreamsynth",
         "primary": {
           "template": {
             "style": "full",
@@ -376,14 +376,14 @@ module.exports = {
           },
         },
 
-        "quote": "Branded as a project for “social good,” it is really a search for their next billion dollars.",
+        "quote": "Branded as a project for “social good,” it is really a search for their next billion dollars and zetabyte of data.",
 
         "secondary": {
           "template": {
             "style":"split",
             "contentType":"imgText",
             "img":"secondary.png",
-            "text":"I had this dream towards the end of my one month. I chose to illustrate this one because it felt very real.<br/><br/>Meltdown follows a tech giant launching an ambitious project in a volatile market. Branded as a project for “social good”, it is really a search for their next billion dollars and next zetabyte of data." 
+            "text":"I had this dream towards the end of my one month. I chose to illustrate this one because it felt very real.<br/><br/>Meltdown follows a tech giant launching an ambitious project in a volatile market. Branded as a project for “social good”, it is really a search for their next billion dollars and zetabyte of data." 
           }
         },
 

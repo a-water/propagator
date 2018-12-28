@@ -142,11 +142,10 @@ class SplitTemplate extends Component {
           }
           {
             this.props.data.contentType !== 'imgImg' ?
-            this.left : null
-          }
-          {
-            this.props.data.contentType !== 'imgImg' ?
-            this.right : null
+            <>
+              { this.left }
+              { this.right }
+            </> : null
           }
         </div>
       )
