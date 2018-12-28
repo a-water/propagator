@@ -78,18 +78,7 @@ class SplitTemplate extends Component {
       
     // img on the left
     return (
-      <div className= {data.isDoubleImg ? "split-left img double-img" : "split-left img" }>
-        {data.isDoubleImg ? 
-          <div className="submission-title-container">
-                { title }
-                {
-                  this.props.extProjectUrl !== "" && this.props.isPrimary ?
-                  <a className="ext-proj-url" href={ this.props.extProjectUrl } rel="noopener noreferrer" target="_blank">website</a> : null
-                }
-          </div>
-        :
-          null
-        }
+      <div className={ data.isDoubleImg ? "split-left img double-img" : "split-left img" }>
         <img
           className="img-left" 
           alt="subImg"
@@ -97,7 +86,6 @@ class SplitTemplate extends Component {
         />
       </div>
     );
-    
   }
 
   // ------------------------------------------------------
@@ -132,15 +120,34 @@ class SplitTemplate extends Component {
     )
   }
 
-  // ------------------------------------------------------\
+  // ------------------------------------------------------
   render() {
     if (this.props.data) {  
       this.generateSides(this.props.data);
 
       return (
-        <div className="split-template">
-          { this.left }
-          { this.right }
+        <div className={"split-template " + this.props.data.contentType }>
+          { 
+            this.props.data.contentType === 'imgImg' ? 
+            <div className="submission-title-container img-img">
+              { <span className="submission-title">{ this.props.subTitle }</span> }
+            </div> : null
+          }
+          {
+            this.props.data.contentType === 'imgImg' ?
+            <div className="imgImg-container">
+              { this.left }
+              { this.right }
+            </div> : null
+          }
+          {
+            this.props.data.contentType !== 'imgImg' ?
+            this.left : null
+          }
+          {
+            this.props.data.contentType !== 'imgImg' ?
+            this.right : null
+          }
         </div>
       )
     }

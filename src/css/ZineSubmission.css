@@ -42,6 +42,23 @@
   align-self: center;
 }
 
+.split-template.imgImg {
+  flex-direction: column;
+  align-items: center;
+  max-width: 85%;
+}
+
+.imgImg-container {
+  display: flex;
+  justify-content: space-evenly;
+  margin-top: 24px;
+  margin-bottom: 32px;
+}
+
+.submission-title-container.img-img {
+  margin-top: 40px;
+}
+
 .double-text-left {
   background: #f4f4f4;
 }
@@ -51,8 +68,7 @@
 }
 
 .double-img {
-  margin: 50px;
-  width: 35% !important;
+  width: 43% !important;
 }
 
 .submission-title {

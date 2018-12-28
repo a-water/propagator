@@ -115,6 +115,15 @@
     margin-bottom: 56px;
     max-width: 80%;
   }
+
+  .imgImg-container {
+    flex-direction: column;
+  }
+
+  .double-img {
+    width: 100%!important;
+    margin-bottom: 24px;
+  }
   
   /* FullTemplate */
   .full-template-inner {
