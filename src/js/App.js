@@ -2,13 +2,21 @@ import React, { Component } from 'react';
 import { Route, Switch } from 'react-router-dom';
 import Landing from './Landing';
 import Zine from './Zine';
+import ReactGA from 'react-ga';
 
 // bleh this will need to change later to a db
 import issueData from './data/issue-01';
 
 class App extends Component {
 
+  initializeReactGA() {
+    ReactGA.initialize('UA-131437187-1');
+    ReactGA.pageview('/');
+  }
+
   render() {
+
+    this.initializeReactGA();
 
     const App = () => (
       <div className="App">
