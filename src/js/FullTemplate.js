@@ -74,7 +74,7 @@ class FullTemplate extends Component {
               <span className="submission-title">{ this.props.subTitle }</span>
               {
                 this.props.extProjectUrl !== "" ?
-                <a className="ext-proj-url" href={ this.props.extProjectUrl } rel="noopener noreferrer" target="_blank">
+                <a href={ this.props.extProjectUrl } rel="noopener noreferrer" target="_blank">
                   <div className="ext-proj-btn">
                     { this.props.subTitle === 'odbol' ? 'Launch Dreamsynth' : 'website' } 
                   </div>
