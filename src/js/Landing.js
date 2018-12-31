@@ -19,7 +19,7 @@ class Landing extends Component {
           </div>
 
           <div id="subscribe-area">
-            <span id="subscribe-title">Subscribe to our newsletter for updates,<br/> opportunities, & open calls.</span>
+            <p id="subscribe-title">Subscribe to our newsletter for updates, opportunities, & open calls.</p>
             <form id="subscribe-form" action="https://tinyletter.com/propagator-zine" method="post" target="popupwindow" onSubmit={this.subscribeOnSubmit}>
               <input type="text" placeholder="email address" name="email" id="tlemail"></input>
               <input className="form-btn" type="submit" value="submit"></input>
