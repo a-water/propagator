@@ -2,27 +2,63 @@ import React, { Component } from 'react';
 import { Link } from 'react-router-dom';
 
 class Landing extends Component {
+
+  subscribeOnSubmit() {
+    window.open('https://tinyletter.com/propagator-zine', 'popupwindow', 'scrollbars=yes,width=800,height=600');
+    return true;
+  }
+
   render() {
     return (
       <div className="landing">
-        <div id="landing-header">
+        <div className="landing-left">
           <div id="landing-about">
-            <span id="landing-title">PROPAGATOR</span>
-            <br/><span id="landing-description">is a collaborative zine, crafted by a community of peers working across creative disciplines such as art, design, and technology. Its inception came out of a need for time and space - for experimenting and engaging with different approaches to creating art, for expanding our horizons and creative practices, and most importantly, to develop a better understanding of ourselves and our place in the world.</span>
+            <h1 id="landing-title">PROPAGATOR</h1>
+            <p id="landing-description">is a collaborative zine, crafted by a community of peers working across creative disciplines such as art, design, and technology.
+            <br/> <br/>Its inception came out of a need for time and space - for experimenting and engaging with different approaches to creating art, for expanding our horizons and creative practices, and most importantly, to develop a better understanding of ourselves and our place in the world.</p>
           </div>
+
+          <div id="subscribe-area">
+            <span id="subscribe-title">Subscribe to our newsletter for updates, opportunities, & open calls.</span>
+            <br/>
+            <form id="subscribe-form" action="https://tinyletter.com/propagator-zine" method="post" target="popupwindow" onSubmit={this.subscribeOnSubmit}>
+              <input type="text" placeholder="email address" name="email" id="tlemail"></input>
+              <input className="form-btn" type="submit" value="submit"></input>
+            </form>
+         </div>
+
         </div>
-        <div id="issue-list">
-          <Link to="/issue-01">
-            <div className="issue-card">
-              ISSUE 01: DREAM MACHINE
+
+        <div className="landing-right">
+          <div id="right-background">
+            <img
+              id="right-background-img"
+              alt="right side background image"
+              src={ require(`../assets/landing-bg.png`) }
+            />
+          </div>
+
+          <div id="issue-section">
+            <div id="issue-section-details">
+              <span id="issue-number">Issue 01</span>
+              <br/>
+              <span id="issue-title">Dream Machine</span>
+              <div id="line-divider"></div>
+              <span id="issue-contributors">Ann Chen, Lynn Hu, James Proctor, Alex Chan, Michaela Costello, ODBOL, Yousif Al-Yousifi, ILOVECOMPUTERS, & Ashwath ANAND</span>
             </div>
-          </Link>
-        </div>
-        <div id="landing-signup">
-            <p>
-              If you would like to get involved, please email us at <a href="mailto:propagator.zine@gmail.com">propagator.zine@gmail.com</a>.
-            </p>
+            <div id="issue-link">
+              <Link to="/issue-01">
+                  <span id="issue-link">Click to read</span>
+                  <img
+                    id="issue-link-img"
+                    alt="Open Issue 01 Arrow"
+                    src={ require(`../assets/arrow-right.png`) }
+                  />
+              </Link>
+            </div>
           </div>
+          
+        </div>
       </div>
     );
   }

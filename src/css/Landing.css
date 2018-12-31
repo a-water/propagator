@@ -2,9 +2,101 @@
   background: ghostwhite;
   display: flex;
   height: 100%;
-  padding: 24px;
-  flex-direction: column;
+  flex-direction: row;
 }
+
+.landing .landing-left,
+.landing .landing-right {
+  width: 50%;
+  display: inline-flex;
+}
+
+.landing-left {
+  background: #f9f9f9;
+  display: flex;
+  flex-direction: column;
+  padding-top: 50px;
+  padding-left: 70px;
+}
+
+.landing-right {
+  justify-content: center;
+  align-items: center;
+}
+
+#right-background {
+  width: 50%;
+  height: 100%;
+  position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+}
+
+#right-background-img {
+  min-width: 100%;
+  min-height: 100%;
+  flex-shrink: 0;
+}
+
+#issue-section {
+  background: #16151f;
+  opacity: 0.75;
+  height: 600px;
+  width: 600px;
+  color: #f4defa;
+  border-radius: 50%;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  text-transform: uppercase;
+}
+
+#issue-section-details {
+  align-content: left;
+  max-width: 80%;
+  margin-left: 100px;
+}
+
+#issue-section-details span {
+  display: inline-block;
+  margin-bottom: 10px;
+}
+
+#issue-number {
+  font-size: 1.8em;
+  font-weight: 200;
+}
+
+#issue-title {
+  font-size: 2.0em;
+}
+
+#line-divider {
+  background: #f4defa;
+  width: 100px;
+  height: 2px;
+  margin-bottom: 30px;
+}
+
+#issue-contributors {
+  width: 75%;
+  font-weight: 200;
+}
+
+#issue-link {
+  margin-top: 100px;
+  color: #f4defa;
+}
+
+#issue-link-img {
+  width: 20px;
+  height: 12px;
+  margin-left: 10px;
+}
+
 
 * {
   box-sizing: border-box;
@@ -16,11 +108,12 @@
 }
 
 #landing-about {
-  margin-bottom: 24px;
+  /* margin-bottom: 24px; */
+  max-width: 50%;
 }
 
 #landing-title {
-  font-size: 1.4em;
+  font-size: 2.0em;
 }
 
 #landing-description {
@@ -28,31 +121,38 @@
   font-weight: 300;
 }
 
-.issue-card {
-  background: url('../assets/landing.png');
-  object-fit: fill;
+#subscribe-area {
+  max-width: 25%;
+  bottom: 40px;
+  position: fixed;
+}
+
+#subscribe-form {
+  border: 2px solid #16151f;
+  margin-top: 20px;
+  height:50px;
+}
+
+#subscribe-title {
+  font-size: 0.8em;
+}
+
+input[type="text"] {
+  width: 75%;
+  font-size: 1em;
+  padding: 12px;
+  border: none;
+}
+
+input.form-btn {
+  background: #16151f;
+  color: #f4defa;
+  width: 25%;
   height: 100%;
-  zoom: 1.2;
-  max-height: 250px;
-  background-position: 0px -200px;
-	background-repeat: no-repeat;
-  border: 3px solid #2d00ff;
-  padding: 32px;
-  color: #2d00ff;
-  height: 300px;
-}
-
-
-.issue-card:hover {
-  cursor: pointer;
-  /* background:#2d00ff; */
-  /* background:rgba(255, 255, 255, 0.2); */
-}
-
-.issue-card:hover a {
-  color: white;
-}
-
-.issue-card a {
-  color: #2d00ff;
+  float: right;
+  border: none;
+  text-transform: uppercase;
+  text-align: center;
+  font-size: 0.8em;
+  letter-spacing: 0.8px;
 }
