@@ -15,6 +15,7 @@
     padding: 24px;
     /* margin-bottom: 70px; */
     min-height: 100%;
+    display: none !important; 
   }
 
   #landing-about {

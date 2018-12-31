@@ -43,6 +43,38 @@
   filter: saturate(4);
 }
 
+#right-background-img {
+  animation: filter-animation 8s infinite;
+}
+
+@-webkit-keyframes filter-animation {
+  0% {
+    -webkit-filter: hue-rotate(0deg) saturate(4);
+  }
+
+  50% {
+    -webkit-filter: hue-rotate(100deg) saturate(20);
+  }
+
+  100% {
+    -webkit-filter: hue-rotate(0deg) saturate(4);
+  }
+}
+
+@keyframes filter-animation {
+  0% {
+    filter: hue-rotate(0deg) saturate(4);
+  }
+
+  50% {
+    filter: hue-rotate(100deg) saturate(20);
+  }
+
+  100% {
+    filter: hue-rotate(0deg) saturate(4);
+  }
+}
+
 #issue-section {
   width: 65%;
   min-width: 400px;

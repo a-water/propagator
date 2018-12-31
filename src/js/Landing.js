@@ -41,7 +41,7 @@ class Landing extends Component {
               <h3 id="issue-number">Issue 01</h3>
               <span id="issue-title">Dream Machine</span>
               <div id="line-divider"></div>
-              <span id="issue-contributors">Ann Chen // Lynn Hu // James Proctor // Alex Chan // Michaela Costello // Odbol // Yousif Al-Yousifi // ILOVECOMPUTERS // Ashwath ANAND</span>
+              <span id="issue-contributors">// Ann Chen // Lynn Hu // James Proctor // Alex Chan // Michaela Costello // Odbol // Yousif Al-Yousifi // ILOVECOMPUTERS // Ashwath Anand //</span>
             </div>
           </div>
           <div id="issue-link">
